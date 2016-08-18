@@ -1,0 +1,206 @@
+/* ======= HEADER ======= */
+#qlc_header {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 32px 0 0;
+  height: 135px;
+  @media (max-width: 768px) {
+    height: auto;
+    padding-top: 15px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: auto;
+  }
+  @media (min-width: 980px) and (max-width: 1200px) {
+    height: auto;
+  }
+  .relative {
+    position: relative;
+  }
+  //  Logo
+  #qlc_logo {
+    width: 59px;
+    float: left;
+    margin-right: 30px;
+    a {
+      display: block;
+      height: 70px;
+      background: url("../images/logo.png") no-repeat;
+      background-size: contain;
+      text-indent: -9000px;
+    }
+  }
+  button {
+    padding: 0 !important;
+    margin: 0 !important;
+    cursor: pointer;
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    z-index: 100;
+  }
+  // Navigation Menu
+  #qlc_navigation {
+    margin: 0 !important;
+    padding: 0 !important;
+    float: left;
+    text-align: center;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 100%;
+    }
+    @media (min-width: 980px) and (max-width: 1200px) {
+      width: 100%;
+    }
+  }
+  #qlc_main_navigation {
+    margin-top: 41px;
+    float: left;
+    @media (max-width: 767px) {
+      float: none;
+      margin-top: 6px;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin-top: 20px;
+    }
+    @media (min-width: 980px) and (max-width: 1200px) {
+      margin-top: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      @media (max-width: 767px) {
+        margin-bottom: 0 !important;
+      }
+      li {
+        float: left;
+        margin-right: 22px;
+        @media (max-width: 767px) {
+          float: none;
+          margin: 0;
+          width: 100%;
+        }
+        &:last-child {
+          margin: 0;
+        }
+        a {
+          font-size: 17px;
+          font-weight: 600;
+          padding: 0 10px;
+          text-transform: uppercase;
+          color: #000;
+          font-family: "Proxima Nova";
+          letter-spacing: 2px;
+          text-decoration: none;
+          @media (max-width: 767px) {
+            padding: 0 !important;
+            margin: 0 0 10px 0;
+            display: inline-block;
+          }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 13px;
+            padding: 0 10px 6px !important;
+            display: block;
+          }
+          @media (min-width: 980px) and (max-width: 1200px) {
+            display: block;
+          }
+          &:hover {
+            color: #9e25a5;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 0 10px 34px;
+            border-bottom: 5px solid #9e25a5;
+            @media (min-width: 768px) and (max-width: 1024px) {
+              display: block;
+              padding: 0 10px 6px !important;
+              font-size: 13px;
+            }
+          }
+        }
+        &.qlc_current_menu {
+          a {
+            color: #9e25a5;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 0 10px 34px;
+            border-bottom: 5px solid #9e25a5;
+            @media (min-width: 768px) and (max-width: 1024px) {
+              display: block;
+              padding: 0 10px 6px !important;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Navigation Menu
+
+  // User Profile
+  .qlc_user_info {
+    float: right;
+    width: 253px;
+    margin-top: 4px;
+    @media (max-width: 767px) {
+      float: left;
+      width: 100%;
+      margin: 10px 0;
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      margin-top: 0;
+    }
+    @media (min-width: 980px) and (max-width: 1200px) {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      margin-top: 0;
+    }
+    img {
+      margin-right: 10px;
+    }
+    .qlc_user_name {
+      display: inline-block;
+      vertical-align: middle;
+      .qlc_user_massage {
+        display: inline-block;
+        font-family: "Apercu";
+        font-weight: 400;
+        font-size: 20px;
+      }
+      .qlc_user_profile_name {
+        display: block;
+        color: #9e25a5;
+        font-size: 22px;
+        text-decoration: none;
+        font-weight: 700;
+        position: relative;
+        padding-right: 29px;
+        cursor: pointer;
+        font-family: "Circular Std  Bold";
+        &:after {
+          content: "\e259";
+          display: inline-block;
+          font-family: 'Glyphicons Halflings';
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1;
+          color: #000;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          position: absolute;
+          right: 0;
+          top: 5px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  // User Profile
+}

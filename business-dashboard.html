@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="images/favicon.png" rel="shortcut icon">
+    <title>QLC</title>
+
+    <!-- Bootstrap -->
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+       
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+         
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+       <![endif]-->
+
+    <!-- Font Awesome CDN -->
+    <script src="https://use.fontawesome.com/37637496c7.js"></script>
+    <!-- Font Awesome CDN -->
+
+</head>
+<body>
+
+<!-- header -->
+<header id="qlc_header">
+    <div class="container relative">
+        <!-- logo -->
+
+        <div id="qlc_logo" class="col-sm1">
+            <a href="#">QLC</a>
+        </div>
+        <!-- /logo -->
+
+        <!-- main navigation -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#qlc_navigation" aria-expanded="false">
+            <!--     <span class="sr-only">Toggle navigation</span>-->
+            <!--       <span class="icon-bar"></span>-->
+            <!--       <span class="icon-bar"></span>-->
+            <!--       <span class="icon-bar"></span>-->
+            <img src="images/cell-btn.png" alt="">
+        </button>
+
+        <div class="collapse navbar-collapse" id="qlc_navigation">
+            <nav id="qlc_main_navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="qlc_current_menu"><a href="#">list a new project</a></li>
+                    <li><a href="#">Manage listing</a></li>
+                    <li><a href="#">browse projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- /main navigation -->
+
+        <!-- user profile area -->
+        <div class="qlc_user_info">
+            <img src="images/header-user-thumb.png" class="img-circle" alt="">
+            <span class="qlc_user_name">
+                <span class="qlc_user_massage">hey</span>
+                <a class="qlc_user_profile_name">
+                    Sarah hyland
+                </a>
+            </span>
+        </div>
+        <!-- /user profile area -->
+
+    </div>
+</header>
+<!-- /header -->
+
+<!-- content -->
+<section id="qlc_content">
+    <div class="container">
+        <!-- notification -->
+        <div class="qlc_banner alert">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <div class="qlc_banner_text">
+                <img src="images/bell.png" alt="" class="img-responsive">
+                <p>We have some<br><span>new projects available</span> for you to list!</p>
+            </div>
+        </div>
+        <!-- notification -->
+        <!-- projects -->
+        <div class="qlc_projects">
+            <h2>my projects</h2>
+            <div class="qlc_project_status">
+                <ul>
+                    <li><a href="#active">active</a></li>
+                    <li><a href="#archive">Archives</a></li>
+                </ul>
+            </div>
+
+            <div class="qlc_projects_wrapper clearfix tab-content">
+                <div id="active" class="tab-pane" role="tabpanel">
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image1.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_pending">penging</span>
+                        </div>
+                        <h3><a href="#">Content marketing with chatting chatt</a></h3>
+                        <p>Start: 22 March 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#hong kong</a>
+                            <a href="#">#education</a>
+                            <a href="#">#mobile</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image2.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_incomplete">incomplete</span>
+                        </div>
+                        <h3><a href="#">Social Media Marketing For Travel Tech Platform</a></h3>
+                        <p>Start: 12 april 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#digital</a>
+                            <a href="#">#marketing</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image3.png" alt="" class="img-responsive"></a>
+                        </div>
+                        <h3><a href="#">Business Development For A Digital Agency</a></h3>
+                        <p>Start: 05 may 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#business</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image4.png" alt="" class="img-responsive"></a>
+                        </div>
+                        <h3><a href="#">Connect The World With Social App For Groups</a></h3>
+                        <p>Start: 18 june 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#mobileapps</a>
+                            <a href="#">#socialmedia</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="archive" class="tab-pane" role="tabpanel">
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image1.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_pending">penging</span>
+                        </div>
+                        <h3><a href="#">Content marketing with chatting chatt</a></h3>
+                        <p>Start: 22 March 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#hong kong</a>
+                            <a href="#">#education</a>
+                            <a href="#">#mobile</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image2.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_incomplete">incomplete</span>
+                        </div>
+                        <h3><a href="#">Social Media Marketing For Travel Tech Platform</a></h3>
+                        <p>Start: 12 april 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#digital</a>
+                            <a href="#">#marketing</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image3.png" alt="" class="img-responsive"></a>
+                        </div>
+                        <h3><a href="#">Business Development For A Digital Agency</a></h3>
+                        <p>Start: 05 may 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#business</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image4.png" alt="" class="img-responsive"></a>
+                        </div>
+                        <h3><a href="#">Connect The World With Social App For Groups</a></h3>
+                        <p>Start: 18 june 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#mobileapps</a>
+                            <a href="#">#socialmedia</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image3.png" alt="" class="img-responsive"></a>
+                        </div>
+                        <h3><a href="#">Business Development For A Digital Agency</a></h3>
+                        <p>Start: 05 may 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#business</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image4.png" alt="" class="img-responsive"></a>
+                        </div>
+                        <h3><a href="#">Connect The World With Social App For Groups</a></h3>
+                        <p>Start: 18 june 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#mobileapps</a>
+                            <a href="#">#socialmedia</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image3.png" alt="" class="img-responsive"></a>
+                        </div>
+                        <h3><a href="#">Business Development For A Digital Agency</a></h3>
+                        <p>Start: 05 may 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#business</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-image4.png" alt="" class="img-responsive"></a>
+                        </div>
+                        <h3><a href="#">Connect The World With Social App For Groups</a></h3>
+                        <p>Start: 18 june 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#mobileapps</a>
+                            <a href="#">#socialmedia</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- projects -->
+
+        <!-- applications -->
+        <div class="qlc_projects_listing">
+            <h2>My Project Listings</h2>
+            <div class="qlc_application_status">
+                <ul>
+                    <li><a href="#current">current</a></li>
+                    <li><a href="#history">history</a></li>
+                </ul>
+            </div>
+            <div class="qlc_projects_listing_wrapper clearfix tab-content">
+                <div id="current" class="tab-pane" role="tabpanel">
+                    <div class="qlc_project_listing col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-listing.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_live">live</span>
+                        </div>
+                        <h3><a href="#">Help Connect Language Learners
+                            To Native Speakers</a></h3>
+                        <p>due: 22 March 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#language</a>
+                            <a href="#">#learning</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project_listing col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-listing-2.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_draft">draft</span>
+                        </div>
+                        <h3><a href="#">Help An Adventure Provider
+                            Reach Their Audience</a></h3>
+                        <p>due: 22 january 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#marketing</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="history" class="tab-pane" role="tabpanel">
+                    <div class="qlc_project_listing col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-listing.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_live">live</span>
+                        </div>
+                        <h3><a href="#">Help Connect Language Learners
+                            To Native Speakers</a></h3>
+                        <p>due: 22 March 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#language</a>
+                            <a href="#">#learning</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project_listing col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-listing-2.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_draft">draft</span>
+                        </div>
+                        <h3><a href="#">Help An Adventure Provider
+                            Reach Their Audience</a></h3>
+                        <p>due: 22 january 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#marketing</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project_listing col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-listing.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_live">live</span>
+                        </div>
+                        <h3><a href="#">Help Connect Language Learners
+                            To Native Speakers</a></h3>
+                        <p>due: 22 March 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#language</a>
+                            <a href="#">#learning</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project_listing col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-listing-2.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_draft">draft</span>
+                        </div>
+                        <h3><a href="#">Help An Adventure Provider
+                            Reach Their Audience</a></h3>
+                        <p>due: 22 january 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#marketing</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project_listing col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-listing.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_live">live</span>
+                        </div>
+                        <h3><a href="#">Help Connect Language Learners
+                            To Native Speakers</a></h3>
+                        <p>due: 22 March 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#language</a>
+                            <a href="#">#learning</a>
+                        </div>
+                    </div>
+                    <div class="qlc_project_listing col-md-3 col-sm-6">
+                        <div class="qlc_project_image">
+                            <a href="#"><img src="images/project-listing-2.png" alt="" class="img-responsive"></a>
+                            <span class="qlc_draft">draft</span>
+                        </div>
+                        <h3><a href="#">Help An Adventure Provider
+                            Reach Their Audience</a></h3>
+                        <p>due: 22 january 2016</p>
+                        <hr>
+                        <div class="qlc_project_tags">
+                            <a href="#">#marketing</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qlc_applications_wrapper clearfix">
+        <div class="container">
+            <article class="qlc_application col-md-3 col-sm-6">
+                <div class="qlc_application_image">
+                    <img src="images/white-bg.png" alt="" class="img-responsive">
+                    <div class="qlc_application_image_overlay">
+                        <h2>Getting
+                            Started with
+                            <br>QLC</h2>
+                    </div>
+                </div>
+            </article>
+            <article class="qlc_application col-md-3 col-sm-6">
+                <a href="#">
+                    <div class="qlc_application_image">
+                        <img src="images/application-image1.png" alt="" class="img-responsive">
+                        <div class="qlc_application_image_overlay">
+                            <span class="qlc_profile">build your<br> profile</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="qlc_application col-md-3 col-sm-6">
+                <a href="#">
+                    <div class="qlc_application_image">
+                        <img src="images/application-image2.png" alt="" class="img-responsive">
+                        <div class="qlc_application_image_overlay">
+                            <span class="qlc_guide">new<br> user guide</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+            <article class="qlc_application col-md-3 col-sm-6">
+                <a href="#">
+                    <div class="qlc_application_image">
+                        <img src="images/application-image3.png" alt="" class="img-responsive">
+                        <div class="qlc_application_image_overlay">
+                            <span class="qlc_browse">browse<br> projects</span>
+                        </div>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </div>
+    <!-- applications -->
+</section>
+<!-- /content -->
+
+<!-- footer -->
+<footer id="qlc_footer">
+    <div class="container">
+
+        <div class="col-sm-6 qlc_footer_logo_social">
+            <div class="qlc_footer_logo">
+                <a href="#">QLC</a>
+            </div>
+            <div class="qlc_copy_social">
+                <span class="qlc_copy">&copy; 2016 QLC</span>
+                <div class="qlc_footer_social">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="col-sm-6 qlc_footer_menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Hello</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Get In Touch</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-sm-6 qlc_footer_menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Get Involved</a></li>
+                        <li><a href="#">For Startups</a></li>
+                        <li><a href="#">Send Feedbacks</a></li>
+                        <li><a href="#">For Students</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom JS Code -->
+<script type="text/javascript">
+
+    $('.qlc_project_status li a:first').tab('show');
+    $('.qlc_project_status li a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+
+    $('.qlc_application_status li a:first').tab('show');
+    $('.qlc_application_status li a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
+</script>
+<!-- Custom JS Code -->
+
+</body>
+</html>

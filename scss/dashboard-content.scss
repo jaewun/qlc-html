@@ -1,0 +1,514 @@
+/* ======= CONTENT ======= */
+// FONTS
+@font-face {
+  font-family: 'Apercu';
+  src: url('../fonts/apercu.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/apercu.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/apercu.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/apercu.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/apercu.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/apercu.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Circular';
+  src: url('../fonts/CircularStd-Book.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/CircularStd-Book.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/CircularStd-Book.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/CircularStd-Book.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/CircularStd-Book.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Circular Std  Bold';
+  src: url('../fonts/Circular Std  Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Circular Std  Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Circular Std  Bold.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Circular Std  Bold.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Circular Std  Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Circular Std  Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/Proxima Nova Semibold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Proxima Nova Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Proxima Nova Semibold.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Proxima Nova Semibold.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Proxima Nova Semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Proxima Nova Semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url('../fonts/Proxima Nova Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Proxima Nova Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Proxima Nova Bold.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Proxima Nova Bold.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Proxima Nova Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Proxima Nova Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@media (min-width: 1920px) {
+  .container {
+    width: 1500px;
+  }
+}
+
+// Notification
+.qlc_notifications {
+  background: $alabaster;
+  border: 1px solid $alto;
+  border-radius: 3px;
+  padding: 29px 38px 32px !important;
+  font-size: 20px;
+  margin-top: 126px !important;
+  margin-bottom: 0 !important;
+  position: relative;
+  font-family: 'Apercu';
+  @media (max-width: 768px) {
+    padding: 20px 18px 20px !important;
+    margin-top: 40px !important;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 20px 18px 20px !important;
+    margin-top: 40px !important;
+  }
+  a.close {
+    font-weight: 100;
+    color: $black;
+    font-size: 32px;
+    opacity: 1;
+  }
+}
+
+// Projects
+.qlc_projects, .qlc_applications, .qlc_projects_listing {
+  margin-bottom: 54px;
+  padding-top: 80px;
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding-top: 30px;
+    margin-bottom: 15px;
+  }
+  h2 {
+    font-size: 35px;
+    color: $gun-powder;
+    margin: 0 0 44px;
+    text-transform: capitalize;
+    line-height: 43px;
+    font-family: 'Circular Std  Bold';
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
+  .qlc_project_status, .qlc_application_status {
+    overflow: hidden;
+    border-bottom: 1px solid $mischka;
+    height: 44px;
+    margin-bottom: 53px;
+    @media (max-width: 1024px) {
+      margin-bottom: 30px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        float: left;
+        &.current-menu-item {
+          a {
+            color: $seance;
+            border-bottom: 5px solid $seance;
+          }
+        }
+        &.active {
+          a {
+            color: $seance;
+            border-bottom: 5px solid $seance;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $shark;
+          font-size: 17px;
+          text-transform: uppercase;
+          padding: 0 60px 17px;
+          font-family: 'Proxima Nova';
+          letter-spacing: 2px;
+          @media (max-width: 768px) {
+            padding: 0 22px 17px;
+          }
+          @media (max-width: 480px) {
+            padding: 0 24px 17px;
+          }
+        }
+      }
+    }
+  }
+  .qlc_load_more {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: $comet;
+    border: 1px solid $mischka;
+    border-radius: 3px;
+    padding: 16px 64px 14px;
+    line-height: 12px;
+    background: $white;
+    margin: 0 auto;
+    display: block;
+    font-family: 'Proxima Nova';
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  .qlc_projects_wrapper, .qlc_applications_wrapper, .qlc_projects_listing_wrapper {
+    .qlc_project, .qlc_application, .qlc_project_listing {
+      margin-bottom: 58px;
+      @media (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+      .qlc_project_image, .qlc_application_image {
+        img {
+          margin-bottom: 15px;
+          position: relative;
+          @media (max-width: 767px) {
+            width: 100%;
+            height: auto;
+          }
+        }
+        span {
+          position: absolute;
+          top: 20px;
+          right: 24px;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: bold;
+          background: $white;
+          font-family: 'Proxima Nova Bold';
+          padding: 2px 17px;
+          letter-spacing: 1px;
+          @media (max-width: 767px) {
+            right: 34px;
+          }
+          @media (min-width: 768px) and (max-width: 1024px) {
+            right: 30px;
+          }
+          &.qlc_pending {
+            box-shadow: 3px 3px $coral-red;
+          }
+          &.qlc_incomplete {
+            box-shadow: 3px 3px $tradewind;
+          }
+          &.qlc_live {
+            box-shadow: 3px 3px $tradewind;
+          }
+          &.qlc_draft {
+            box-shadow: 3px 3px $seance;
+          }
+        }
+      }
+      h3 {
+        font-size: 22px;
+        margin: 0 0 4px 0;
+        line-height: 30px;
+        font-family: 'Circular Std  Bold';
+        a {
+          text-decoration: none;
+          color: $black;
+          &:hover {
+            color: $gun-powder;
+          }
+        }
+        @media (min-width: 981px) and (max-width: 1024px) {
+          font-size: 17px;
+        }
+      }
+      p {
+        font-size: 17px;
+        color: $gun-powder;
+        letter-spacing: 1px;
+        margin: 0;
+        text-transform: capitalize;
+        font-family: 'Apercu';
+      }
+      hr {
+        border-bottom: 1px solid $mischka;
+        margin: 14px 0;
+        border-top: 0;
+      }
+      .qlc_project_tags {
+        a {
+          font-size: 15px;
+          text-decoration: none;
+          color: $black;
+          padding: 0 6px 0 2px;
+          font-family: 'Apercu';
+          @media (max-width: 480px) {
+            margin-bottom: 6px;
+            display: inline-block;
+          }
+          &:hover {
+            color: $coral-red;
+            border-bottom: 1px solid $coral-red;
+          }
+          &.active {
+            color: $coral-red;
+            border-bottom: 1px solid $coral-red;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Applications
+.qlc_applications {
+  padding-top: 0;
+  .qlc_get_started {
+    margin-bottom: 140px;
+    padding-top: 25px;
+    @media (max-width: 1024px) {
+      margin-bottom: 80px;
+    }
+    p {
+      font-size: 44px;
+      line-height: 50px;
+      color: $manatee;
+      margin-bottom: 30px;
+      font-family: 'Circular';
+      @media (max-width: 768px) {
+        font-size: 30px;
+      }
+    }
+    a.qlc_start {
+      padding: 0 8px;
+      text-decoration: none;
+      color: $black;
+      font-size: 30px;
+      background: url(../images/app-pending.png) repeat-x bottom;
+      font-family: 'Circular Std  Bold';
+    }
+    .qlc_text {
+      padding-top: 10px;
+      padding-left: 24px;
+      @media (max-width: 768px) {
+        padding-left: 17px;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.qlc_applications_wrapper {
+  border-top: 1px solid $mischka;
+  padding: 81px 0 60px;
+  @media (max-width: 767px) {
+    padding: 20px 0 20px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    padding: 40px 0 40px;
+  }
+  .qlc_application {
+    margin-bottom: 0;
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
+    .qlc_application_image {
+      position: relative;
+      img {
+        margin: 0;
+        @media (max-width: 767px) {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .qlc_application_image_overlay {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        left: 2%;
+        h2 {
+          font-size: 34px;
+          line-height: normal;
+          color: $black;
+          margin-top: 0;
+          margin-bottom: 0;
+          font-family: 'Circular Std  Bold';
+          @media (min-width: 768px) and (max-width: 1024px) {
+            margin: 0;
+            font-size: 27px;
+          }
+          @media (min-width: 980px) and (max-width: 1200px) {
+            font-size: 28px;
+          }
+        }
+        span {
+          background: none;
+          font-size: 32px;
+          line-height: 30px;
+          color: $white;
+          text-transform: capitalize;
+          padding: 0 10px;
+          display: block;
+          font-family: 'Circular Std  Bold';
+          margin: 0 30px 0 0;
+          &.qlc_profile {
+            background: url(../images/app-incomplete.png) repeat-x bottom;
+          }
+          &.qlc_guide {
+            background: url(../images/app-pending.png) repeat-x bottom;
+          }
+          &.qlc_browse {
+            background: url(../images/app-browse.png) repeat-x bottom;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Banner
+.qlc_banner {
+  margin: 71px 0 0 !important;
+  position: relative;
+  background: url(../images/banner.png) no-repeat;
+  background-size: 100%;
+  min-height: 128px;
+  @media (max-width: 480px) {
+    min-height: 52px !important;
+  }
+  @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    min-height: 39px !important;
+  }
+  @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    min-height: 60px !important;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    min-height: 106px !important;
+  }
+  @media (min-width: 768px) and (max-width: 980px) and (orientation: landscape) {
+    min-height: 82px !important;
+  }
+  @media (max-width: 768px) {
+    margin-top: 20px !important;
+    min-height: 82px;
+  }
+  @media (max-width: 980px) {
+    min-height: 82px;
+  }
+  @media (min-width: 768px) and (max-width: 980px) {
+    margin: 30px 0 0 !important;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+  .qlc_banner_text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    left: 2%;
+    img {
+      display: inline-block;
+      vertical-align: top;
+      height: 70px;
+      @media (min-width: 320px) and (max-width: 767px) {
+        height: 17px !important;
+        width: 20px !important;
+      }
+      @media (min-width: 768px) and (max-width: 979px) {
+        height: 60px !important;
+      }
+      @media (min-width: 481px) and (max-width: 767px) {
+        height: 30px !important;
+        width: 30px !important;
+      }
+      @media (max-width: 768px) {
+        height: 50px;
+        width: 50px;
+      }
+      @media (max-width: 480px) {
+        height: 30px;
+        width: 30px;
+      }
+      @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+        height: 40px;
+        width: 40px;
+      }
+      @media (min-width: 980px) and (max-width: 1200px) {
+        height: 50px;
+        width: 50px;
+      }
+    }
+    p {
+      display: inline-block;
+      font-size: 24px;
+      font-family: 'Circular Std  Bold';
+      color: #42414d;
+      line-height: 32px;
+      margin: 7px 0 0 26px;
+      @media (min-width: 320px) and (max-width: 767px) {
+        font-size: 7px !important;
+        line-height: 8px !important;
+        margin: 0 0 0 5px;
+      }
+      @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+        font-size: 12px !important;
+        line-height: 15px !important;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        font-size: 20px !important;
+        line-height: 28px !important;
+      }
+      @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+        font-size: 14px !important;
+        line-height: 20px !important;
+      }
+      @media (min-width: 980px) and (max-width: 1200px) {
+        font-size: 16px !important;
+        line-height: 19px !important;
+        margin: 9px 0 0 10px;
+      }
+      @media (max-width: 480px) {
+        font-size: 10px;
+        line-height: 12px;
+        margin: 1px 0 0 6px;
+      }
+      span {
+        color: $coral-red;
+      }
+    }
+  }
+  a.close {
+    font-weight: 100;
+    color: $black;
+    font-size: 32px;
+    opacity: 1;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    @media (max-width: 767px) {
+      top: -4px;
+    }
+  }
+}
+
+.alert {
+  padding: 0;
+  margin: 0;
+}
+
+.qlc_projects_listing {
+  padding-top: 0;
+  margin-bottom: 0;
+}
