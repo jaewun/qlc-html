@@ -1,8 +1,8 @@
 /* ======= HEADER ======= */
 #qlc_header {
   border-bottom: 1px solid #dcdcdc;
-  padding: 32px 0 0;
-  height: 135px;
+  padding: 21px 0 0;
+  height: 102px;
   @media (max-width: 768px) {
     height: auto;
     padding-top: 15px;
@@ -55,7 +55,7 @@
     }
   }
   #qlc_main_navigation {
-    margin-top: 41px;
+    margin-top: 22px;
     float: left;
     @media (max-width: 767px) {
       float: none;
@@ -72,6 +72,7 @@
       padding: 0;
       @media (max-width: 767px) {
         margin-bottom: 0 !important;
+        background: $seance;
       }
       li {
         float: left;
@@ -80,12 +81,13 @@
           float: none;
           margin: 0;
           width: 100%;
+          border-bottom: 1px solid $white;
         }
         &:last-child {
           margin: 0;
         }
         a {
-          font-size: 17px;
+          font-size: 15px;
           font-weight: 600;
           padding: 0 10px;
           text-transform: uppercase;
@@ -94,9 +96,11 @@
           letter-spacing: 2px;
           text-decoration: none;
           @media (max-width: 767px) {
-            padding: 0 !important;
-            margin: 0 0 10px 0;
+            padding: 10px 0 !important;
+            margin: 0;
             display: inline-block;
+            color: $white;
+            line-height: 22px;
           }
           @media (min-width: 768px) and (max-width: 1024px) {
             font-size: 13px;
@@ -110,13 +114,18 @@
             color: #9e25a5;
             font-weight: 700;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 15px;
             padding: 0 10px 34px;
             border-bottom: 5px solid #9e25a5;
             @media (min-width: 768px) and (max-width: 1024px) {
               display: block;
               padding: 0 10px 6px !important;
               font-size: 13px;
+            }
+            @media (max-width: 767px) {
+              border: none;
+              color: $white;
+              line-height: 22px;
             }
           }
         }
@@ -125,9 +134,16 @@
             color: #9e25a5;
             font-weight: 700;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 15px;
             padding: 0 10px 34px;
             border-bottom: 5px solid #9e25a5;
+            @media (max-width: 767px) {
+              border: none;
+              color: $white;
+              line-height: 22px;
+              padding: 10px 0;
+              margin: 0;
+            }
             @media (min-width: 768px) and (max-width: 1024px) {
               display: block;
               padding: 0 10px 6px !important;
@@ -143,8 +159,6 @@
   // User Profile
   .qlc_user_info {
     float: right;
-    width: 253px;
-    margin-top: 4px;
     @media (max-width: 767px) {
       float: left;
       width: 100%;

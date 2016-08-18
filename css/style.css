@@ -5810,8 +5810,8 @@ button.close {
 /* ======= HEADER ======= */
 #qlc_header {
   border-bottom: 1px solid #dcdcdc;
-  padding: 32px 0 0;
-  height: 135px; }
+  padding: 21px 0 0;
+  height: 102px; }
   @media (max-width: 768px) {
     #qlc_header {
       height: auto;
@@ -5857,7 +5857,7 @@ button.close {
       #qlc_header #qlc_navigation {
         width: 100%; } }
   #qlc_header #qlc_main_navigation {
-    margin-top: 41px;
+    margin-top: 22px;
     float: left; }
     @media (max-width: 767px) {
       #qlc_header #qlc_main_navigation {
@@ -5874,7 +5874,8 @@ button.close {
       padding: 0; }
       @media (max-width: 767px) {
         #qlc_header #qlc_main_navigation ul {
-          margin-bottom: 0 !important; } }
+          margin-bottom: 0 !important;
+          background: #9e25a5; } }
       #qlc_header #qlc_main_navigation ul li {
         float: left;
         margin-right: 22px; }
@@ -5882,11 +5883,12 @@ button.close {
           #qlc_header #qlc_main_navigation ul li {
             float: none;
             margin: 0;
-            width: 100%; } }
+            width: 100%;
+            border-bottom: 1px solid #ffffff; } }
         #qlc_header #qlc_main_navigation ul li:last-child {
           margin: 0; }
         #qlc_header #qlc_main_navigation ul li a {
-          font-size: 17px;
+          font-size: 15px;
           font-weight: 600;
           padding: 0 10px;
           text-transform: uppercase;
@@ -5896,9 +5898,11 @@ button.close {
           text-decoration: none; }
           @media (max-width: 767px) {
             #qlc_header #qlc_main_navigation ul li a {
-              padding: 0 !important;
-              margin: 0 0 10px 0;
-              display: inline-block; } }
+              padding: 10px 0 !important;
+              margin: 0;
+              display: inline-block;
+              color: #ffffff;
+              line-height: 22px; } }
           @media (min-width: 768px) and (max-width: 1024px) {
             #qlc_header #qlc_main_navigation ul li a {
               font-size: 13px;
@@ -5911,7 +5915,7 @@ button.close {
             color: #9e25a5;
             font-weight: 700;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 15px;
             padding: 0 10px 34px;
             border-bottom: 5px solid #9e25a5; }
             @media (min-width: 768px) and (max-width: 1024px) {
@@ -5919,22 +5923,32 @@ button.close {
                 display: block;
                 padding: 0 10px 6px !important;
                 font-size: 13px; } }
+            @media (max-width: 767px) {
+              #qlc_header #qlc_main_navigation ul li a:hover {
+                border: none;
+                color: #ffffff;
+                line-height: 22px; } }
         #qlc_header #qlc_main_navigation ul li.qlc_current_menu a {
           color: #9e25a5;
           font-weight: 700;
           text-decoration: none;
-          font-size: 17px;
+          font-size: 15px;
           padding: 0 10px 34px;
           border-bottom: 5px solid #9e25a5; }
+          @media (max-width: 767px) {
+            #qlc_header #qlc_main_navigation ul li.qlc_current_menu a {
+              border: none;
+              color: #ffffff;
+              line-height: 22px;
+              padding: 10px 0;
+              margin: 0; } }
           @media (min-width: 768px) and (max-width: 1024px) {
             #qlc_header #qlc_main_navigation ul li.qlc_current_menu a {
               display: block;
               padding: 0 10px 6px !important;
               font-size: 13px; } }
   #qlc_header .qlc_user_info {
-    float: right;
-    width: 253px;
-    margin-top: 4px; }
+    float: right; }
     @media (max-width: 767px) {
       #qlc_header .qlc_user_info {
         float: left;
@@ -6129,7 +6143,7 @@ button.close {
   .qlc_projects .qlc_project_status, .qlc_projects .qlc_application_status, .qlc_applications .qlc_project_status, .qlc_applications .qlc_application_status, .qlc_projects_listing .qlc_project_status, .qlc_projects_listing .qlc_application_status {
     overflow: hidden;
     border-bottom: 1px solid #e0e1e6;
-    height: 44px;
+    height: 40px;
     margin-bottom: 53px; }
     @media (max-width: 1024px) {
       .qlc_projects .qlc_project_status, .qlc_projects .qlc_application_status, .qlc_applications .qlc_project_status, .qlc_applications .qlc_application_status, .qlc_projects_listing .qlc_project_status, .qlc_projects_listing .qlc_application_status {
@@ -6149,11 +6163,14 @@ button.close {
         .qlc_projects .qlc_project_status ul li a, .qlc_projects .qlc_application_status ul li a, .qlc_applications .qlc_project_status ul li a, .qlc_applications .qlc_application_status ul li a, .qlc_projects_listing .qlc_project_status ul li a, .qlc_projects_listing .qlc_application_status ul li a {
           text-decoration: none;
           color: #28282b;
-          font-size: 17px;
+          font-size: 15px;
           text-transform: uppercase;
-          padding: 0 60px 17px;
+          padding: 0 40px 15px;
           font-family: 'Proxima Nova';
           letter-spacing: 2px; }
+          .qlc_projects .qlc_project_status ul li a:hover, .qlc_projects .qlc_application_status ul li a:hover, .qlc_applications .qlc_project_status ul li a:hover, .qlc_applications .qlc_application_status ul li a:hover, .qlc_projects_listing .qlc_project_status ul li a:hover, .qlc_projects_listing .qlc_application_status ul li a:hover {
+            border-bottom: 5px solid #28282b;
+            color: #28282b; }
           @media (max-width: 768px) {
             .qlc_projects .qlc_project_status ul li a, .qlc_projects .qlc_application_status ul li a, .qlc_applications .qlc_project_status ul li a, .qlc_applications .qlc_application_status ul li a, .qlc_projects_listing .qlc_project_status ul li a, .qlc_projects_listing .qlc_application_status ul li a {
               padding: 0 22px 17px; } }
@@ -6218,14 +6235,15 @@ button.close {
       font-family: 'Circular Std  Bold'; }
       .qlc_projects .qlc_projects_wrapper .qlc_project h3 a, .qlc_projects .qlc_projects_wrapper .qlc_application h3 a, .qlc_projects .qlc_projects_wrapper .qlc_project_listing h3 a, .qlc_projects .qlc_applications_wrapper .qlc_project h3 a, .qlc_projects .qlc_applications_wrapper .qlc_application h3 a, .qlc_projects .qlc_applications_wrapper .qlc_project_listing h3 a, .qlc_projects .qlc_projects_listing_wrapper .qlc_project h3 a, .qlc_projects .qlc_projects_listing_wrapper .qlc_application h3 a, .qlc_projects .qlc_projects_listing_wrapper .qlc_project_listing h3 a, .qlc_applications .qlc_projects_wrapper .qlc_project h3 a, .qlc_applications .qlc_projects_wrapper .qlc_application h3 a, .qlc_applications .qlc_projects_wrapper .qlc_project_listing h3 a, .qlc_applications .qlc_applications_wrapper .qlc_project h3 a, .qlc_applications .qlc_applications_wrapper .qlc_application h3 a, .qlc_applications .qlc_applications_wrapper .qlc_project_listing h3 a, .qlc_applications .qlc_projects_listing_wrapper .qlc_project h3 a, .qlc_applications .qlc_projects_listing_wrapper .qlc_application h3 a, .qlc_applications .qlc_projects_listing_wrapper .qlc_project_listing h3 a, .qlc_projects_listing .qlc_projects_wrapper .qlc_project h3 a, .qlc_projects_listing .qlc_projects_wrapper .qlc_application h3 a, .qlc_projects_listing .qlc_projects_wrapper .qlc_project_listing h3 a, .qlc_projects_listing .qlc_applications_wrapper .qlc_project h3 a, .qlc_projects_listing .qlc_applications_wrapper .qlc_application h3 a, .qlc_projects_listing .qlc_applications_wrapper .qlc_project_listing h3 a, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project h3 a, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_application h3 a, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project_listing h3 a {
         text-decoration: none;
-        color: #000000; }
+        color: #000000;
+        display: block; }
         .qlc_projects .qlc_projects_wrapper .qlc_project h3 a:hover, .qlc_projects .qlc_projects_wrapper .qlc_application h3 a:hover, .qlc_projects .qlc_projects_wrapper .qlc_project_listing h3 a:hover, .qlc_projects .qlc_applications_wrapper .qlc_project h3 a:hover, .qlc_projects .qlc_applications_wrapper .qlc_application h3 a:hover, .qlc_projects .qlc_applications_wrapper .qlc_project_listing h3 a:hover, .qlc_projects .qlc_projects_listing_wrapper .qlc_project h3 a:hover, .qlc_projects .qlc_projects_listing_wrapper .qlc_application h3 a:hover, .qlc_projects .qlc_projects_listing_wrapper .qlc_project_listing h3 a:hover, .qlc_applications .qlc_projects_wrapper .qlc_project h3 a:hover, .qlc_applications .qlc_projects_wrapper .qlc_application h3 a:hover, .qlc_applications .qlc_projects_wrapper .qlc_project_listing h3 a:hover, .qlc_applications .qlc_applications_wrapper .qlc_project h3 a:hover, .qlc_applications .qlc_applications_wrapper .qlc_application h3 a:hover, .qlc_applications .qlc_applications_wrapper .qlc_project_listing h3 a:hover, .qlc_applications .qlc_projects_listing_wrapper .qlc_project h3 a:hover, .qlc_applications .qlc_projects_listing_wrapper .qlc_application h3 a:hover, .qlc_applications .qlc_projects_listing_wrapper .qlc_project_listing h3 a:hover, .qlc_projects_listing .qlc_projects_wrapper .qlc_project h3 a:hover, .qlc_projects_listing .qlc_projects_wrapper .qlc_application h3 a:hover, .qlc_projects_listing .qlc_projects_wrapper .qlc_project_listing h3 a:hover, .qlc_projects_listing .qlc_applications_wrapper .qlc_project h3 a:hover, .qlc_projects_listing .qlc_applications_wrapper .qlc_application h3 a:hover, .qlc_projects_listing .qlc_applications_wrapper .qlc_project_listing h3 a:hover, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project h3 a:hover, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_application h3 a:hover, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project_listing h3 a:hover {
-          color: #42414d; }
+          color: #9e25a5; }
       @media (min-width: 981px) and (max-width: 1024px) {
         .qlc_projects .qlc_projects_wrapper .qlc_project h3, .qlc_projects .qlc_projects_wrapper .qlc_application h3, .qlc_projects .qlc_projects_wrapper .qlc_project_listing h3, .qlc_projects .qlc_applications_wrapper .qlc_project h3, .qlc_projects .qlc_applications_wrapper .qlc_application h3, .qlc_projects .qlc_applications_wrapper .qlc_project_listing h3, .qlc_projects .qlc_projects_listing_wrapper .qlc_project h3, .qlc_projects .qlc_projects_listing_wrapper .qlc_application h3, .qlc_projects .qlc_projects_listing_wrapper .qlc_project_listing h3, .qlc_applications .qlc_projects_wrapper .qlc_project h3, .qlc_applications .qlc_projects_wrapper .qlc_application h3, .qlc_applications .qlc_projects_wrapper .qlc_project_listing h3, .qlc_applications .qlc_applications_wrapper .qlc_project h3, .qlc_applications .qlc_applications_wrapper .qlc_application h3, .qlc_applications .qlc_applications_wrapper .qlc_project_listing h3, .qlc_applications .qlc_projects_listing_wrapper .qlc_project h3, .qlc_applications .qlc_projects_listing_wrapper .qlc_application h3, .qlc_applications .qlc_projects_listing_wrapper .qlc_project_listing h3, .qlc_projects_listing .qlc_projects_wrapper .qlc_project h3, .qlc_projects_listing .qlc_projects_wrapper .qlc_application h3, .qlc_projects_listing .qlc_projects_wrapper .qlc_project_listing h3, .qlc_projects_listing .qlc_applications_wrapper .qlc_project h3, .qlc_projects_listing .qlc_applications_wrapper .qlc_application h3, .qlc_projects_listing .qlc_applications_wrapper .qlc_project_listing h3, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project h3, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_application h3, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project_listing h3 {
           font-size: 17px; } }
     .qlc_projects .qlc_projects_wrapper .qlc_project p, .qlc_projects .qlc_projects_wrapper .qlc_application p, .qlc_projects .qlc_projects_wrapper .qlc_project_listing p, .qlc_projects .qlc_applications_wrapper .qlc_project p, .qlc_projects .qlc_applications_wrapper .qlc_application p, .qlc_projects .qlc_applications_wrapper .qlc_project_listing p, .qlc_projects .qlc_projects_listing_wrapper .qlc_project p, .qlc_projects .qlc_projects_listing_wrapper .qlc_application p, .qlc_projects .qlc_projects_listing_wrapper .qlc_project_listing p, .qlc_applications .qlc_projects_wrapper .qlc_project p, .qlc_applications .qlc_projects_wrapper .qlc_application p, .qlc_applications .qlc_projects_wrapper .qlc_project_listing p, .qlc_applications .qlc_applications_wrapper .qlc_project p, .qlc_applications .qlc_applications_wrapper .qlc_application p, .qlc_applications .qlc_applications_wrapper .qlc_project_listing p, .qlc_applications .qlc_projects_listing_wrapper .qlc_project p, .qlc_applications .qlc_projects_listing_wrapper .qlc_application p, .qlc_applications .qlc_projects_listing_wrapper .qlc_project_listing p, .qlc_projects_listing .qlc_projects_wrapper .qlc_project p, .qlc_projects_listing .qlc_projects_wrapper .qlc_application p, .qlc_projects_listing .qlc_projects_wrapper .qlc_project_listing p, .qlc_projects_listing .qlc_applications_wrapper .qlc_project p, .qlc_projects_listing .qlc_applications_wrapper .qlc_application p, .qlc_projects_listing .qlc_applications_wrapper .qlc_project_listing p, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project p, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_application p, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project_listing p {
-      font-size: 17px;
+      font-size: 15px;
       color: #42414d;
       letter-spacing: 1px;
       margin: 0;
@@ -6244,10 +6262,10 @@ button.close {
       @media (max-width: 480px) {
         .qlc_projects .qlc_projects_wrapper .qlc_project .qlc_project_tags a, .qlc_projects .qlc_projects_wrapper .qlc_application .qlc_project_tags a, .qlc_projects .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_projects .qlc_applications_wrapper .qlc_project .qlc_project_tags a, .qlc_projects .qlc_applications_wrapper .qlc_application .qlc_project_tags a, .qlc_projects .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_projects .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a, .qlc_projects .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a, .qlc_projects .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_applications .qlc_projects_wrapper .qlc_project .qlc_project_tags a, .qlc_applications .qlc_projects_wrapper .qlc_application .qlc_project_tags a, .qlc_applications .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_applications .qlc_applications_wrapper .qlc_project .qlc_project_tags a, .qlc_applications .qlc_applications_wrapper .qlc_application .qlc_project_tags a, .qlc_applications .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_applications .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a, .qlc_applications .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a, .qlc_applications .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_projects_listing .qlc_projects_wrapper .qlc_project .qlc_project_tags a, .qlc_projects_listing .qlc_projects_wrapper .qlc_application .qlc_project_tags a, .qlc_projects_listing .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_projects_listing .qlc_applications_wrapper .qlc_project .qlc_project_tags a, .qlc_projects_listing .qlc_applications_wrapper .qlc_application .qlc_project_tags a, .qlc_projects_listing .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a {
           margin-bottom: 6px;
-          display: inline-block; } }
+          display: inline-block;
+          font-size: 13px; } }
       .qlc_projects .qlc_projects_wrapper .qlc_project .qlc_project_tags a:hover, .qlc_projects .qlc_projects_wrapper .qlc_application .qlc_project_tags a:hover, .qlc_projects .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a:hover, .qlc_projects .qlc_applications_wrapper .qlc_project .qlc_project_tags a:hover, .qlc_projects .qlc_applications_wrapper .qlc_application .qlc_project_tags a:hover, .qlc_projects .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a:hover, .qlc_projects .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a:hover, .qlc_projects .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a:hover, .qlc_projects .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a:hover, .qlc_applications .qlc_projects_wrapper .qlc_project .qlc_project_tags a:hover, .qlc_applications .qlc_projects_wrapper .qlc_application .qlc_project_tags a:hover, .qlc_applications .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a:hover, .qlc_applications .qlc_applications_wrapper .qlc_project .qlc_project_tags a:hover, .qlc_applications .qlc_applications_wrapper .qlc_application .qlc_project_tags a:hover, .qlc_applications .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a:hover, .qlc_applications .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a:hover, .qlc_applications .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a:hover, .qlc_applications .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a:hover, .qlc_projects_listing .qlc_projects_wrapper .qlc_project .qlc_project_tags a:hover, .qlc_projects_listing .qlc_projects_wrapper .qlc_application .qlc_project_tags a:hover, .qlc_projects_listing .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a:hover, .qlc_projects_listing .qlc_applications_wrapper .qlc_project .qlc_project_tags a:hover, .qlc_projects_listing .qlc_applications_wrapper .qlc_application .qlc_project_tags a:hover, .qlc_projects_listing .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a:hover, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a:hover, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a:hover, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a:hover {
-        color: #ff413e;
-        border-bottom: 1px solid #ff413e; }
+        border-bottom: 1px solid #42414d; }
       .qlc_projects .qlc_projects_wrapper .qlc_project .qlc_project_tags a.active, .qlc_projects .qlc_projects_wrapper .qlc_application .qlc_project_tags a.active, .qlc_projects .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a.active, .qlc_projects .qlc_applications_wrapper .qlc_project .qlc_project_tags a.active, .qlc_projects .qlc_applications_wrapper .qlc_application .qlc_project_tags a.active, .qlc_projects .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a.active, .qlc_projects .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a.active, .qlc_projects .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a.active, .qlc_projects .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a.active, .qlc_applications .qlc_projects_wrapper .qlc_project .qlc_project_tags a.active, .qlc_applications .qlc_projects_wrapper .qlc_application .qlc_project_tags a.active, .qlc_applications .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a.active, .qlc_applications .qlc_applications_wrapper .qlc_project .qlc_project_tags a.active, .qlc_applications .qlc_applications_wrapper .qlc_application .qlc_project_tags a.active, .qlc_applications .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a.active, .qlc_applications .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a.active, .qlc_applications .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a.active, .qlc_applications .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a.active, .qlc_projects_listing .qlc_projects_wrapper .qlc_project .qlc_project_tags a.active, .qlc_projects_listing .qlc_projects_wrapper .qlc_application .qlc_project_tags a.active, .qlc_projects_listing .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a.active, .qlc_projects_listing .qlc_applications_wrapper .qlc_project .qlc_project_tags a.active, .qlc_projects_listing .qlc_applications_wrapper .qlc_application .qlc_project_tags a.active, .qlc_projects_listing .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a.active, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a.active, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a.active, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a.active {
         color: #ff413e;
         border-bottom: 1px solid #ff413e; }
@@ -6288,18 +6306,15 @@ button.close {
 
 .qlc_applications_wrapper {
   border-top: 1px solid #e0e1e6;
-  padding: 81px 0 60px; }
+  padding: 81px 0 35px; }
   @media (max-width: 767px) {
     .qlc_applications_wrapper {
       padding: 20px 0 20px; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .qlc_applications_wrapper {
-      padding: 40px 0 40px; } }
+      padding: 40px 0 15px; } }
   .qlc_applications_wrapper .qlc_application {
-    margin-bottom: 0; }
-    @media (max-width: 768px) {
-      .qlc_applications_wrapper .qlc_application {
-        margin-bottom: 15px; } }
+    margin-bottom: 25px; }
     .qlc_applications_wrapper .qlc_application .qlc_application_image {
       position: relative; }
       .qlc_applications_wrapper .qlc_application .qlc_application_image img {
@@ -6353,8 +6368,9 @@ button.close {
   min-height: 128px; }
   @media (max-width: 480px) {
     .qlc_banner {
-      min-height: 52px !important; } }
-  @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+      min-height: 52px !important;
+      background: none; } }
+  @media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
     .qlc_banner {
       min-height: 39px !important; } }
   @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
@@ -6407,8 +6423,8 @@ button.close {
           width: 50px; } }
       @media (max-width: 480px) {
         .qlc_banner .qlc_banner_text img {
-          height: 30px;
-          width: 30px; } }
+          height: 30px !important;
+          width: 30px !important; } }
       @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
         .qlc_banner .qlc_banner_text img {
           height: 40px;
@@ -6448,9 +6464,9 @@ button.close {
           margin: 9px 0 0 10px; } }
       @media (max-width: 480px) {
         .qlc_banner .qlc_banner_text p {
-          font-size: 10px;
-          line-height: 12px;
-          margin: 1px 0 0 6px; } }
+          font-size: 13px !important;
+          line-height: 12px !important;
+          margin: 4px 0 0 6px; } }
       .qlc_banner .qlc_banner_text p span {
         color: #ff413e; }
   .qlc_banner a.close {

@@ -109,7 +109,7 @@
   .qlc_project_status, .qlc_application_status {
     overflow: hidden;
     border-bottom: 1px solid $mischka;
-    height: 44px;
+    height: 40px;
     margin-bottom: 53px;
     @media (max-width: 1024px) {
       margin-bottom: 30px;
@@ -135,11 +135,15 @@
         a {
           text-decoration: none;
           color: $shark;
-          font-size: 17px;
+          font-size: 15px;
           text-transform: uppercase;
-          padding: 0 60px 17px;
+          padding: 0 40px 15px;
           font-family: 'Proxima Nova';
           letter-spacing: 2px;
+          &:hover {
+            border-bottom: 5px solid $shark;
+            color: $shark;
+          }
           @media (max-width: 768px) {
             padding: 0 22px 17px;
           }
@@ -220,8 +224,9 @@
         a {
           text-decoration: none;
           color: $black;
+          display: block;
           &:hover {
-            color: $gun-powder;
+            color: $seance;
           }
         }
         @media (min-width: 981px) and (max-width: 1024px) {
@@ -229,7 +234,7 @@
         }
       }
       p {
-        font-size: 17px;
+        font-size: 15px;
         color: $gun-powder;
         letter-spacing: 1px;
         margin: 0;
@@ -251,10 +256,10 @@
           @media (max-width: 480px) {
             margin-bottom: 6px;
             display: inline-block;
+            font-size: 13px;
           }
           &:hover {
-            color: $coral-red;
-            border-bottom: 1px solid $coral-red;
+            border-bottom: 1px solid $gun-powder;
           }
           &.active {
             color: $coral-red;
@@ -308,18 +313,15 @@
 
 .qlc_applications_wrapper {
   border-top: 1px solid $mischka;
-  padding: 81px 0 60px;
+  padding: 81px 0 35px;
   @media (max-width: 767px) {
     padding: 20px 0 20px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    padding: 40px 0 40px;
+    padding: 40px 0 15px;
   }
   .qlc_application {
-    margin-bottom: 0;
-    @media (max-width: 768px) {
-      margin-bottom: 15px;
-    }
+    margin-bottom: 25px;
     .qlc_application_image {
       position: relative;
       img {
@@ -384,8 +386,9 @@
   min-height: 128px;
   @media (max-width: 480px) {
     min-height: 52px !important;
+    background: none;
   }
-  @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+  @media (min-width: 481px) and (max-width: 767px) and (orientation: portrait) {
     min-height: 39px !important;
   }
   @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
@@ -438,8 +441,8 @@
         width: 50px;
       }
       @media (max-width: 480px) {
-        height: 30px;
-        width: 30px;
+        height: 30px !important;
+        width: 30px !important;
       }
       @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
         height: 40px;
@@ -480,9 +483,9 @@
         margin: 9px 0 0 10px;
       }
       @media (max-width: 480px) {
-        font-size: 10px;
-        line-height: 12px;
-        margin: 1px 0 0 6px;
+        font-size: 13px !important;
+        line-height: 12px !important;
+        margin: 4px 0 0 6px;
       }
       span {
         color: $coral-red;
