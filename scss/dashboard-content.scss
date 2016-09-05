@@ -109,10 +109,11 @@
   .qlc_project_status, .qlc_application_status {
     overflow: hidden;
     border-bottom: 1px solid $mischka;
-    height: 40px;
+    height: 43px;
     margin-bottom: 53px;
     @media (max-width: 1024px) {
       margin-bottom: 30px;
+      height: 42px;
     }
     ul {
       margin: 0;
@@ -132,23 +133,32 @@
             border-bottom: 5px solid $seance;
           }
         }
+        &:first-child {
+          a {
+            margin-left: 0;
+          }
+        }
         a {
           text-decoration: none;
           color: $shark;
           font-size: 15px;
           text-transform: uppercase;
-          padding: 0 40px 15px;
+          padding: 0 35px 18px;
           font-family: 'Proxima Nova';
           letter-spacing: 2px;
+          margin-left: 6px;
           &:hover {
-            border-bottom: 5px solid $shark;
-            color: $shark;
+            border-bottom: 5px solid $comet;
+            color: $comet;
+          }
+          @media (max-width: 767px) {
+            font-size: 12px;
           }
           @media (max-width: 768px) {
-            padding: 0 22px 17px;
+            padding: 0 22px 18px;
           }
           @media (max-width: 480px) {
-            padding: 0 24px 17px;
+            padding: 0 24px 18px;
           }
         }
       }
@@ -196,6 +206,9 @@
           font-family: 'Proxima Nova Bold';
           padding: 2px 17px;
           letter-spacing: 1px;
+          @media (max-width: 480px) {
+            font-size: 11px;
+          }
           @media (max-width: 767px) {
             right: 34px;
           }
@@ -221,6 +234,9 @@
         margin: 0 0 4px 0;
         line-height: 30px;
         font-family: 'Circular Std  Bold';
+        @media (min-width: 1025px) and (max-width: 1200px) {
+          font-size: 17px;
+        }
         a {
           text-decoration: none;
           color: $black;
@@ -230,11 +246,12 @@
           }
         }
         @media (min-width: 981px) and (max-width: 1024px) {
-          font-size: 17px;
+          font-size: 14px;
+          line-height: 20px;
         }
       }
       p {
-        font-size: 15px;
+        font-size: 13px;
         color: $gun-powder;
         letter-spacing: 1px;
         margin: 0;
@@ -251,12 +268,14 @@
           font-size: 15px;
           text-decoration: none;
           color: $black;
-          padding: 0 6px 0 2px;
+          margin: 0 6px 0 2px;
           font-family: 'Apercu';
           @media (max-width: 480px) {
             margin-bottom: 6px;
             display: inline-block;
-            font-size: 13px;
+          }
+          @media (max-width: 767px) {
+            font-size: 12px;
           }
           &:hover {
             border-bottom: 1px solid $gun-powder;
@@ -362,6 +381,10 @@
           display: block;
           font-family: 'Circular Std  Bold';
           margin: 0 30px 0 0;
+          @media (max-width: 480px) {
+            font-size: 20px;
+            line-height: 20px;
+          }
           &.qlc_profile {
             background: url(../images/app-incomplete.png) repeat-x bottom;
           }
