@@ -1,54 +1,4 @@
 /* ======= CONTENT ======= */
-// FONTS
-@font-face {
-  font-family: 'Apercu';
-  src: url('../fonts/apercu.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/apercu.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/apercu.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/apercu.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/apercu.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/apercu.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Circular';
-  src: url('../fonts/CircularStd-Book.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/CircularStd-Book.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/CircularStd-Book.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/CircularStd-Book.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/CircularStd-Book.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Circular Std  Bold';
-  src: url('../fonts/Circular Std  Bold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Circular Std  Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/Circular Std  Bold.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/Circular Std  Bold.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/Circular Std  Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/Circular Std  Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url('../fonts/Proxima Nova Semibold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Proxima Nova Semibold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/Proxima Nova Semibold.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/Proxima Nova Semibold.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/Proxima Nova Semibold.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/Proxima Nova Semibold.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'Proxima Nova Bold';
-  src: url('../fonts/Proxima Nova Bold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Proxima Nova Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/Proxima Nova Bold.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/Proxima Nova Bold.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/Proxima Nova Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/Proxima Nova Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
 
 @media (min-width: 1920px) {
   .container {
@@ -63,7 +13,7 @@
   border-radius: 3px;
   padding: 29px 38px 32px !important;
   font-size: 20px;
-  margin-top: 126px !important;
+  margin-top: 30px !important;
   margin-bottom: 0 !important;
   position: relative;
   font-family: 'Apercu';
@@ -85,14 +35,12 @@
 
 // Projects
 .qlc_projects, .qlc_applications, .qlc_projects_listing {
-  margin-bottom: 54px;
-  padding-top: 80px;
+  padding-top: 30px;
   @media (max-width: 767px) {
     padding-top: 20px;
     margin-bottom: 20px;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
-    padding-top: 30px;
     margin-bottom: 15px;
   }
   h2 {
@@ -262,6 +210,9 @@
         border-bottom: 1px solid $mischka;
         margin: 14px 0;
         border-top: 0;
+      }
+      .qlc-profile-photo {
+        margin-top:10px;
       }
       .qlc_project_tags {
         a {
