@@ -1,0 +1,181 @@
+.qlc_create_account {
+  background: url("../images/bg.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+  .qlc_overlay {
+    background: url("../images/overlay.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 116px 0;
+    .qlc_preferences {
+      text-align: center;
+      margin-bottom: 60px;
+      hr {
+        display: inline-block;
+        width: 120px;
+        margin: 0 0 60px 0 !important;
+      }
+      div {
+        display: inline-block;
+        &.active {
+          span {
+            background: $white;
+            color: $black;
+            label {
+              display: block;
+              width: 41px;
+              font-family: 'Apercu';
+              font-size: 16px;
+              font-weight: 100;
+            }
+            i {
+              display: none;
+            }
+          }
+          a {
+            font-weight: bold;
+          }
+        }
+        span {
+          border: 1px solid $white;
+          border-radius: 50%;
+          height: 41px;
+          width: 41px;
+          line-height: 41px;
+          text-align: center;
+          display: block;
+          margin: 0 auto 25px;
+          label {
+            display: none;
+          }
+          i {
+            color: $white;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $white;
+          font-size: 16px;
+          display: block;
+          font-family: 'Apercu';
+        }
+      }
+    }
+    .qlc_account {
+      padding: 62px 0 70px;
+      background: $white;
+      text-align: center;
+      border-radius: 4px;
+      border: 1px solid $alto;
+      overflow: hidden;
+      h1 {
+        font-size: 32px !important;
+        color: $black;
+        font-weight: bold;
+      }
+      h4 {
+        font-size: 20px;
+        font-family: Georgia;
+        color: $black;
+        clear: both;
+        margin-bottom: 0 !important;
+      }
+      h2, h3 {
+        font-family: 'Circular Std  Bold';
+        clear: both;
+        color: $black;
+      }
+      p {
+        font-family: 'Apercu';
+        font-size: 16px;
+        line-height: 25px;
+      }
+      img {
+        margin: 0 auto 25px;
+        display: block;
+      }
+      div {
+        padding-top: 30px;
+        margin-bottom: 40px;
+        &.qlc_individual {
+          h2 {
+            color: $seance;
+          }
+        }
+      }
+    }
+  }
+}
+
+.qlc_red {
+  background: url(../images/app-pending.png) repeat-x bottom;
+  display: inline-block;
+}
+
+.qlc_tag {
+  font-size: 14px;
+  text-decoration: none;
+  color: $oslo-gray;
+  border: 1px solid $mercury;
+  border-radius: 30px;
+  padding: 14px 38px;
+  display: inline-block;
+}
+
+.qlc_or {
+  margin-top: 54px;
+  span {
+    background: url("../images/or-bg.png") no-repeat center;
+    display: table;
+    height: 206px;
+    margin: 0 auto;
+    label {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 17px;
+      font-family: 'Apercu';
+    }
+  }
+}
+
+.qlc_purple_tag {
+  color: $seance;
+}
+
+.qlc_red_tag {
+  color: $coral-red;
+}
+
+.qlc_purple_button {
+  font-size: 18px;
+  color: $white;
+  background: $seance;
+  padding: 16px 38px;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border: none;
+  text-transform: capitalize;
+  &:hover {
+    text-decoration: none;
+    color: $white;
+    background: $purple-heart;
+  }
+  &:after {
+    content: "\f00c";
+    font-family: fontAwesome;
+    margin-left: 20px;
+  }
+}
+
+.qlc_acc2 {
+  .qlc_or {
+    margin: 32px 0 62px 0 !important;
+  }
+  h3 {
+    font-size: 25px !important;
+  }
+  h4 {
+    font-family: 'Circular Std  Bold' !important;
+  }
+}

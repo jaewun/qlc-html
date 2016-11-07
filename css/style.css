@@ -5806,6 +5806,36 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@font-face {
+  font-family: 'Apercu';
+  src: url("../fonts/apercu.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/apercu.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu.woff2") format("woff2"), url("../fonts/apercu.woff") format("woff"), url("../fonts/apercu.ttf") format("truetype"), url("../fonts/apercu.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Circular';
+  src: url("../fonts/CircularStd-Book.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff"), url("../fonts/CircularStd-Book.ttf") format("truetype"), url("../fonts/CircularStd-Book.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Circular Std  Bold';
+  src: url("../fonts/Circular Std  Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Circular Std  Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circular Std  Bold.woff2") format("woff2"), url("../fonts/Circular Std  Bold.woff") format("woff"), url("../fonts/Circular Std  Bold.ttf") format("truetype"), url("../fonts/Circular Std  Bold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("../fonts/Proxima Nova Semibold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Proxima Nova Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Semibold.woff2") format("woff2"), url("../fonts/Proxima Nova Semibold.woff") format("woff"), url("../fonts/Proxima Nova Semibold.ttf") format("truetype"), url("../fonts/Proxima Nova Semibold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+@font-face {
+  font-family: 'Proxima Nova Bold';
+  src: url("../fonts/Proxima Nova Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Proxima Nova Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Bold.woff2") format("woff2"), url("../fonts/Proxima Nova Bold.woff") format("woff"), url("../fonts/Proxima Nova Bold.ttf") format("truetype"), url("../fonts/Proxima Nova Bold.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
 /* =======  BRAND COLORS ======= */
 /* ======= HEADER ======= */
 #qlc_header {
@@ -5835,7 +5865,7 @@ button.close {
     #qlc_header #qlc_logo a {
       display: block;
       height: 35px;
-      background: url("../images/logo.png") no-repeat;
+      background: url("/images/logo_black.png") no-repeat;
       background-size: contain;
       text-indent: -9000px; }
   #qlc_header button {
@@ -6052,36 +6082,6 @@ button.close {
           color: #b13eb8; }
 
 /* ======= CONTENT ======= */
-@font-face {
-  font-family: 'Apercu';
-  src: url("../fonts/apercu.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/apercu.eot?#iefix") format("embedded-opentype"), url("../fonts/apercu.woff2") format("woff2"), url("../fonts/apercu.woff") format("woff"), url("../fonts/apercu.ttf") format("truetype"), url("../fonts/apercu.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-@font-face {
-  font-family: 'Circular';
-  src: url("../fonts/CircularStd-Book.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff"), url("../fonts/CircularStd-Book.ttf") format("truetype"), url("../fonts/CircularStd-Book.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-@font-face {
-  font-family: 'Circular Std  Bold';
-  src: url("../fonts/Circular Std  Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Circular Std  Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circular Std  Bold.woff2") format("woff2"), url("../fonts/Circular Std  Bold.woff") format("woff"), url("../fonts/Circular Std  Bold.ttf") format("truetype"), url("../fonts/Circular Std  Bold.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("../fonts/Proxima Nova Semibold.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Proxima Nova Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Semibold.woff2") format("woff2"), url("../fonts/Proxima Nova Semibold.woff") format("woff"), url("../fonts/Proxima Nova Semibold.ttf") format("truetype"), url("../fonts/Proxima Nova Semibold.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
-@font-face {
-  font-family: 'Proxima Nova Bold';
-  src: url("../fonts/Proxima Nova Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/Proxima Nova Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Proxima Nova Bold.woff2") format("woff2"), url("../fonts/Proxima Nova Bold.woff") format("woff"), url("../fonts/Proxima Nova Bold.ttf") format("truetype"), url("../fonts/Proxima Nova Bold.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
 @media (min-width: 1920px) {
   .container {
     width: 1500px; } }
@@ -6091,7 +6091,7 @@ button.close {
   border-radius: 3px;
   padding: 29px 38px 32px !important;
   font-size: 20px;
-  margin-top: 126px !important;
+  margin-top: 30px !important;
   margin-bottom: 0 !important;
   position: relative;
   font-family: 'Apercu'; }
@@ -6110,15 +6110,13 @@ button.close {
     opacity: 1; }
 
 .qlc_projects, .qlc_applications, .qlc_projects_listing {
-  margin-bottom: 54px;
-  padding-top: 80px; }
+  padding-top: 30px; }
   @media (max-width: 767px) {
     .qlc_projects, .qlc_applications, .qlc_projects_listing {
       padding-top: 20px;
       margin-bottom: 20px; } }
   @media (min-width: 768px) and (max-width: 1024px) {
     .qlc_projects, .qlc_applications, .qlc_projects_listing {
-      padding-top: 30px;
       margin-bottom: 15px; } }
   .qlc_projects h2, .qlc_applications h2, .qlc_projects_listing h2 {
     font-size: 35px;
@@ -6257,6 +6255,8 @@ button.close {
       border-bottom: 1px solid #e0e1e6;
       margin: 14px 0;
       border-top: 0; }
+    .qlc_projects .qlc_projects_wrapper .qlc_project .qlc-profile-photo, .qlc_projects .qlc_projects_wrapper .qlc_application .qlc-profile-photo, .qlc_projects .qlc_projects_wrapper .qlc_project_listing .qlc-profile-photo, .qlc_projects .qlc_applications_wrapper .qlc_project .qlc-profile-photo, .qlc_projects .qlc_applications_wrapper .qlc_application .qlc-profile-photo, .qlc_projects .qlc_applications_wrapper .qlc_project_listing .qlc-profile-photo, .qlc_projects .qlc_projects_listing_wrapper .qlc_project .qlc-profile-photo, .qlc_projects .qlc_projects_listing_wrapper .qlc_application .qlc-profile-photo, .qlc_projects .qlc_projects_listing_wrapper .qlc_project_listing .qlc-profile-photo, .qlc_applications .qlc_projects_wrapper .qlc_project .qlc-profile-photo, .qlc_applications .qlc_projects_wrapper .qlc_application .qlc-profile-photo, .qlc_applications .qlc_projects_wrapper .qlc_project_listing .qlc-profile-photo, .qlc_applications .qlc_applications_wrapper .qlc_project .qlc-profile-photo, .qlc_applications .qlc_applications_wrapper .qlc_application .qlc-profile-photo, .qlc_applications .qlc_applications_wrapper .qlc_project_listing .qlc-profile-photo, .qlc_applications .qlc_projects_listing_wrapper .qlc_project .qlc-profile-photo, .qlc_applications .qlc_projects_listing_wrapper .qlc_application .qlc-profile-photo, .qlc_applications .qlc_projects_listing_wrapper .qlc_project_listing .qlc-profile-photo, .qlc_projects_listing .qlc_projects_wrapper .qlc_project .qlc-profile-photo, .qlc_projects_listing .qlc_projects_wrapper .qlc_application .qlc-profile-photo, .qlc_projects_listing .qlc_projects_wrapper .qlc_project_listing .qlc-profile-photo, .qlc_projects_listing .qlc_applications_wrapper .qlc_project .qlc-profile-photo, .qlc_projects_listing .qlc_applications_wrapper .qlc_application .qlc-profile-photo, .qlc_projects_listing .qlc_applications_wrapper .qlc_project_listing .qlc-profile-photo, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project .qlc-profile-photo, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_application .qlc-profile-photo, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project_listing .qlc-profile-photo {
+      margin-top: 10px; }
     .qlc_projects .qlc_projects_wrapper .qlc_project .qlc_project_tags a, .qlc_projects .qlc_projects_wrapper .qlc_application .qlc_project_tags a, .qlc_projects .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_projects .qlc_applications_wrapper .qlc_project .qlc_project_tags a, .qlc_projects .qlc_applications_wrapper .qlc_application .qlc_project_tags a, .qlc_projects .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_projects .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a, .qlc_projects .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a, .qlc_projects .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_applications .qlc_projects_wrapper .qlc_project .qlc_project_tags a, .qlc_applications .qlc_projects_wrapper .qlc_application .qlc_project_tags a, .qlc_applications .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_applications .qlc_applications_wrapper .qlc_project .qlc_project_tags a, .qlc_applications .qlc_applications_wrapper .qlc_application .qlc_project_tags a, .qlc_applications .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_applications .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a, .qlc_applications .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a, .qlc_applications .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_projects_listing .qlc_projects_wrapper .qlc_project .qlc_project_tags a, .qlc_projects_listing .qlc_projects_wrapper .qlc_application .qlc_project_tags a, .qlc_projects_listing .qlc_projects_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_projects_listing .qlc_applications_wrapper .qlc_project .qlc_project_tags a, .qlc_projects_listing .qlc_applications_wrapper .qlc_application .qlc_project_tags a, .qlc_projects_listing .qlc_applications_wrapper .qlc_project_listing .qlc_project_tags a, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project .qlc_project_tags a, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_application .qlc_project_tags a, .qlc_projects_listing .qlc_projects_listing_wrapper .qlc_project_listing .qlc_project_tags a {
       font-size: 15px;
       text-decoration: none;
@@ -6498,5 +6498,147 @@ button.close {
 .qlc_projects_listing {
   padding-top: 0;
   margin-bottom: 0; }
+
+.qlc_create_account {
+  background: url("../images/bg.jpg") no-repeat;
+  background-size: cover;
+  height: 100%; }
+  .qlc_create_account .qlc_overlay {
+    background: url("../images/overlay.png") no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 116px 0; }
+    .qlc_create_account .qlc_overlay .qlc_preferences {
+      text-align: center;
+      margin-bottom: 60px; }
+      .qlc_create_account .qlc_overlay .qlc_preferences hr {
+        display: inline-block;
+        width: 120px;
+        margin: 0 0 60px 0 !important; }
+      .qlc_create_account .qlc_overlay .qlc_preferences div {
+        display: inline-block; }
+        .qlc_create_account .qlc_overlay .qlc_preferences div.active span {
+          background: #ffffff;
+          color: #000000; }
+          .qlc_create_account .qlc_overlay .qlc_preferences div.active span label {
+            display: block;
+            width: 41px;
+            font-family: 'Apercu';
+            font-size: 16px;
+            font-weight: 100; }
+          .qlc_create_account .qlc_overlay .qlc_preferences div.active span i {
+            display: none; }
+        .qlc_create_account .qlc_overlay .qlc_preferences div.active a {
+          font-weight: bold; }
+        .qlc_create_account .qlc_overlay .qlc_preferences div span {
+          border: 1px solid #ffffff;
+          border-radius: 50%;
+          height: 41px;
+          width: 41px;
+          line-height: 41px;
+          text-align: center;
+          display: block;
+          margin: 0 auto 25px; }
+          .qlc_create_account .qlc_overlay .qlc_preferences div span label {
+            display: none; }
+          .qlc_create_account .qlc_overlay .qlc_preferences div span i {
+            color: #ffffff; }
+        .qlc_create_account .qlc_overlay .qlc_preferences div a {
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 16px;
+          display: block;
+          font-family: 'Apercu'; }
+    .qlc_create_account .qlc_overlay .qlc_account {
+      padding: 62px 0 70px;
+      background: #ffffff;
+      text-align: center;
+      border-radius: 4px;
+      border: 1px solid #dcdcdc;
+      overflow: hidden; }
+      .qlc_create_account .qlc_overlay .qlc_account h1 {
+        font-size: 32px !important;
+        color: #000000;
+        font-weight: bold; }
+      .qlc_create_account .qlc_overlay .qlc_account h4 {
+        font-size: 20px;
+        font-family: Georgia;
+        color: #000000;
+        clear: both;
+        margin-bottom: 0 !important; }
+      .qlc_create_account .qlc_overlay .qlc_account h2, .qlc_create_account .qlc_overlay .qlc_account h3 {
+        font-family: 'Circular Std  Bold';
+        clear: both;
+        color: #000000; }
+      .qlc_create_account .qlc_overlay .qlc_account p {
+        font-family: 'Apercu';
+        font-size: 16px;
+        line-height: 25px; }
+      .qlc_create_account .qlc_overlay .qlc_account img {
+        margin: 0 auto 25px;
+        display: block; }
+      .qlc_create_account .qlc_overlay .qlc_account div {
+        padding-top: 30px;
+        margin-bottom: 40px; }
+        .qlc_create_account .qlc_overlay .qlc_account div.qlc_individual h2 {
+          color: #9e25a5; }
+
+.qlc_red {
+  background: url(../images/app-pending.png) repeat-x bottom;
+  display: inline-block; }
+
+.qlc_tag {
+  font-size: 14px;
+  text-decoration: none;
+  color: #7f868b;
+  border: 1px solid #e4e2e2;
+  border-radius: 30px;
+  padding: 14px 38px;
+  display: inline-block; }
+
+.qlc_or {
+  margin-top: 54px; }
+  .qlc_or span {
+    background: url("../images/or-bg.png") no-repeat center;
+    display: table;
+    height: 206px;
+    margin: 0 auto; }
+    .qlc_or span label {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 17px;
+      font-family: 'Apercu'; }
+
+.qlc_purple_tag {
+  color: #9e25a5; }
+
+.qlc_red_tag {
+  color: #ff413e; }
+
+.qlc_purple_button {
+  font-size: 18px;
+  color: #ffffff;
+  background: #9e25a5;
+  padding: 16px 38px;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border: none;
+  text-transform: capitalize; }
+  .qlc_purple_button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background: #b42abb; }
+  .qlc_purple_button:after {
+    content: "\f00c";
+    font-family: fontAwesome;
+    margin-left: 20px; }
+
+.qlc_acc2 .qlc_or {
+  margin: 32px 0 62px 0 !important; }
+.qlc_acc2 h3 {
+  font-size: 25px !important; }
+.qlc_acc2 h4 {
+  font-family: 'Circular Std  Bold' !important; }
 
 /*# sourceMappingURL=style.css.map */
