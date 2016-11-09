@@ -6508,6 +6508,9 @@ button.close {
     background-size: cover;
     height: 100%;
     padding: 116px 0; }
+    @media (max-width: 767px) {
+      .qlc_create_account .qlc_overlay {
+        padding: 70px 0; } }
     .qlc_create_account .qlc_overlay .qlc_preferences {
       text-align: center;
       margin-bottom: 60px; }
@@ -6515,8 +6518,15 @@ button.close {
         display: inline-block;
         width: 120px;
         margin: 0 0 60px 0 !important; }
+        @media (max-width: 767px) {
+          .qlc_create_account .qlc_overlay .qlc_preferences hr {
+            display: none; } }
       .qlc_create_account .qlc_overlay .qlc_preferences div {
         display: inline-block; }
+        @media (max-width: 767px) {
+          .qlc_create_account .qlc_overlay .qlc_preferences div {
+            display: block;
+            margin-bottom: 20px; } }
         .qlc_create_account .qlc_overlay .qlc_preferences div.active span {
           background: #ffffff;
           color: #000000; }
@@ -6549,39 +6559,43 @@ button.close {
           font-size: 16px;
           display: block;
           font-family: 'Apercu'; }
-    .qlc_create_account .qlc_overlay .qlc_account {
+    .qlc_create_account .qlc_overlay #qlc_account1, .qlc_create_account .qlc_overlay #qlc_account2 {
       padding: 62px 0 70px;
       background: #ffffff;
       text-align: center;
       border-radius: 4px;
       border: 1px solid #dcdcdc;
       overflow: hidden; }
-      .qlc_create_account .qlc_overlay .qlc_account h1 {
+      .qlc_create_account .qlc_overlay #qlc_account1 h1, .qlc_create_account .qlc_overlay #qlc_account2 h1 {
         font-size: 32px !important;
         color: #000000;
         font-weight: bold; }
-      .qlc_create_account .qlc_overlay .qlc_account h4 {
+      .qlc_create_account .qlc_overlay #qlc_account1 h4, .qlc_create_account .qlc_overlay #qlc_account2 h4 {
         font-size: 20px;
-        font-family: Georgia;
+        font-family: 'Circular Std  Bold';
         color: #000000;
         clear: both;
         margin-bottom: 0 !important; }
-      .qlc_create_account .qlc_overlay .qlc_account h2, .qlc_create_account .qlc_overlay .qlc_account h3 {
+        .qlc_create_account .qlc_overlay #qlc_account1 h4 em, .qlc_create_account .qlc_overlay #qlc_account2 h4 em {
+          font-family: Georgia !important; }
+      .qlc_create_account .qlc_overlay #qlc_account1 h2, .qlc_create_account .qlc_overlay #qlc_account1 h3, .qlc_create_account .qlc_overlay #qlc_account2 h2, .qlc_create_account .qlc_overlay #qlc_account2 h3 {
         font-family: 'Circular Std  Bold';
         clear: both;
         color: #000000; }
-      .qlc_create_account .qlc_overlay .qlc_account p {
-        font-family: 'Apercu';
+      .qlc_create_account .qlc_overlay #qlc_account1 p, .qlc_create_account .qlc_overlay #qlc_account2 p {
+        font-family: 'Roboto', sans-serif;
         font-size: 16px;
         line-height: 25px; }
-      .qlc_create_account .qlc_overlay .qlc_account img {
+      .qlc_create_account .qlc_overlay #qlc_account1 img, .qlc_create_account .qlc_overlay #qlc_account2 img {
         margin: 0 auto 25px;
         display: block; }
-      .qlc_create_account .qlc_overlay .qlc_account div {
+      .qlc_create_account .qlc_overlay #qlc_account1 div, .qlc_create_account .qlc_overlay #qlc_account2 div {
         padding-top: 30px;
         margin-bottom: 40px; }
-        .qlc_create_account .qlc_overlay .qlc_account div.qlc_individual h2 {
-          color: #9e25a5; }
+        .qlc_create_account .qlc_overlay #qlc_account1 div.qlc_individual, .qlc_create_account .qlc_overlay #qlc_account2 div.qlc_individual {
+          margin: 0 !important; }
+          .qlc_create_account .qlc_overlay #qlc_account1 div.qlc_individual h2, .qlc_create_account .qlc_overlay #qlc_account2 div.qlc_individual h2 {
+            color: #9e25a5; }
 
 .qlc_red {
   background: url(../images/app-pending.png) repeat-x bottom;
@@ -6593,8 +6607,12 @@ button.close {
   color: #7f868b;
   border: 1px solid #e4e2e2;
   border-radius: 30px;
-  padding: 14px 38px;
-  display: inline-block; }
+  padding: 9px 19px;
+  margin: 0 5px 10px;
+  display: block;
+  font-family: "Open Sans"; }
+  .qlc_tag:last-child {
+    margin-right: 0; }
 
 .qlc_or {
   margin-top: 54px; }
@@ -6609,22 +6627,82 @@ button.close {
       font-size: 17px;
       font-family: 'Apercu'; }
 
+.qlc_sea_green {
+  color: #297883 !important;
+  font-weight: bold !important;
+  text-decoration: none !important; }
+
 .qlc_purple_tag {
-  color: #9e25a5; }
+  color: #9e25a5 !important;
+  text-decoration: none !important;
+  font-weight: bold; }
+
+.qlc_green_tag {
+  color: #297883 !important;
+  text-decoration: none !important;
+  font-weight: bold; }
 
 .qlc_red_tag {
-  color: #ff413e; }
+  color: #ff413e;
+  font-weight: bold; }
 
-.qlc_purple_button {
+.qlc_green_button {
   font-size: 18px;
   color: #ffffff;
-  background: #9e25a5;
-  padding: 16px 38px;
+  background: #297883;
+  padding: 15px 35px;
   border-radius: 3px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   border: none;
   text-transform: capitalize; }
+  @media (max-width: 767px) {
+    .qlc_green_button {
+      padding: 15px 20px; } }
+  .qlc_green_button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background: #318f9b; }
+  .qlc_green_button:after {
+    content: "\f00c";
+    font-family: fontAwesome;
+    margin-left: 20px; }
+
+.qlc_red_button {
+  font-size: 18px;
+  color: #ffffff;
+  background: #ff413e;
+  padding: 15px 35px;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border: none;
+  text-transform: capitalize; }
+  @media (max-width: 767px) {
+    .qlc_red_button {
+      padding: 15px 20px; } }
+  .qlc_red_button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background: #ff6966; }
+  .qlc_red_button:after {
+    content: "\f00c";
+    font-family: fontAwesome;
+    margin-left: 20px; }
+
+.qlc_purple_button {
+  font-size: 18px;
+  color: #ffffff;
+  background: #9e25a5;
+  padding: 15px 35px;
+  border-radius: 3px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border: none;
+  text-transform: capitalize; }
+  @media (max-width: 767px) {
+    .qlc_purple_button {
+      padding: 15px 20px; } }
   .qlc_purple_button:hover {
     text-decoration: none;
     color: #ffffff;
@@ -6634,11 +6712,392 @@ button.close {
     font-family: fontAwesome;
     margin-left: 20px; }
 
-.qlc_acc2 .qlc_or {
+#qlc_account2 .qlc_or {
   margin: 32px 0 62px 0 !important; }
-.qlc_acc2 h3 {
+#qlc_account2 h3 {
   font-size: 25px !important; }
-.qlc_acc2 h4 {
+#qlc_account2 h4 {
   font-family: 'Circular Std  Bold' !important; }
+
+.background {
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+  overflow: hidden; }
+
+.qlc_save_preference {
+  padding: 55px 40px 60px;
+  overflow: hidden; }
+  .qlc_save_preference .qlc_header a {
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #9e25a5;
+    text-decoration: none; }
+  .qlc_save_preference a:hover {
+    color: #b42abb !important; }
+  .qlc_save_preference .qlc_tags {
+    margin-bottom: 32px;
+    overflow: hidden; }
+    .qlc_save_preference .qlc_tags h4 {
+      font-family: 'Circular Std  Bold';
+      font-size: 19px; }
+
+.qlc_header {
+  margin-bottom: 100px; }
+  @media (max-width: 767px) {
+    .qlc_header {
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .qlc_header img {
+      float: none !important;
+      display: block;
+      margin: 0 auto 10px !important; } }
+  .qlc_header img {
+    margin-right: 26px; }
+  .qlc_header h2 {
+    font-size: 32px !important;
+    font-family: 'Circular Std  Bold';
+    color: #000000; }
+  .qlc_header p, .qlc_header hr, .qlc_header a {
+    display: inline-block;
+    font-size: 17px; }
+  .qlc_header hr {
+    width: 400px;
+    margin: 0 10px !important; }
+  .qlc_header p {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif; }
+  .qlc_header a {
+    color: #ff413e;
+    text-decoration: underline;
+    font-weight: normal; }
+    .qlc_header a:hover {
+      color: #b42abb !important; }
+    .qlc_header a.qlc_purple_anchor {
+      color: #9e25a5 !important;
+      text-decoration: none !important;
+      font-size: 14px;
+      font-weight: bold; }
+
+#qlc_sign_up {
+  padding: 38px 55px 54px; }
+  @media (max-width: 767px) {
+    #qlc_sign_up {
+      padding: 30px 16px; } }
+  @media (max-width: 767px) {
+    #qlc_sign_up .qlc_create_my_account {
+      padding: 30px 0; } }
+  #qlc_sign_up .qlc_header {
+    margin-bottom: 36px; }
+    #qlc_sign_up .qlc_header hr {
+      width: 495px !important;
+      margin-right: 0 !important; }
+    #qlc_sign_up .qlc_header a:hover {
+      color: #b42abb !important; }
+  #qlc_sign_up h3 {
+    font-family: 'Circular Std  Bold';
+    line-height: 30px;
+    margin-bottom: 34px !important;
+    font-size: 25px !important;
+    margin-top: 0 !important;
+    color: #000000; }
+    @media (max-width: 480px) {
+      #qlc_sign_up h3 {
+        text-align: center;
+        display: block;
+        float: none !important; } }
+  #qlc_sign_up .qlc_register img {
+    margin-bottom: 20px; }
+  #qlc_sign_up .qlc_sign_up_form {
+    padding: 0 !important; }
+    #qlc_sign_up .qlc_sign_up_form .letter {
+      margin: 0 !important;
+      opacity: 0.4; }
+      @media (max-width: 480px) {
+        #qlc_sign_up .qlc_sign_up_form .letter {
+          display: block;
+          text-align: center;
+          margin: 0 auto 10px !important;
+          width: 100%; } }
+      #qlc_sign_up .qlc_sign_up_form .letter img {
+        padding: 0 !important;
+        border: none !important; }
+  #qlc_sign_up .qlc_account_type {
+    padding-top: 63px;
+    padding-left: 0; }
+  #qlc_sign_up .qlc_or {
+    margin-top: 86px; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #7f868b;
+  font-size: 14px;
+  font-family: "Open Sans"; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #7f868b;
+  font-size: 14px;
+  font-family: "Open Sans"; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #7f868b;
+  font-size: 14px;
+  font-family: "Open Sans"; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #7f868b;
+  font-size: 14px;
+  font-family: "Open Sans"; }
+
+.qlc_account_type a {
+  margin-bottom: 12px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  opacity: 0.3; }
+  .qlc_account_type a img {
+    border: 2px solid #e4e2e2;
+    border-radius: 2px;
+    padding: 24px;
+    margin-bottom: 12px; }
+  .qlc_account_type a h6 {
+    font-size: 14px;
+    font-family: 'Circular Std  Bold';
+    text-transform: capitalize;
+    color: #000; }
+  .qlc_account_type a:hover, .qlc_account_type a.active {
+    opacity: initial; }
+    .qlc_account_type a:hover img, .qlc_account_type a.active img {
+      border: 2px solid #9e25a5; }
+
+input[type=text], input[type=email], input[type=password] {
+  padding: 12px 20px;
+  width: 100%;
+  border: 1px solid #e4e2e2;
+  border-radius: 3px;
+  margin: 0 0 24px; }
+
+.qlc_half_width {
+  width: 48% !important;
+  float: left;
+  margin: 0 3px 25px !important; }
+  @media (max-width: 767px) {
+    .qlc_half_width {
+      width: 100% !important; } }
+
+#qlc_build_profile_a {
+  padding: 38px 55px 55px; }
+  #qlc_build_profile_a .qlc_verify a {
+    text-decoration: none;
+    color: #7f868b;
+    font-size: 13px; }
+  #qlc_build_profile_a img {
+    margin-bottom: 12px; }
+  #qlc_build_profile_a hr {
+    width: 410px !important; }
+  #qlc_build_profile_a .qlc_header {
+    margin-bottom: 44px; }
+  #qlc_build_profile_a .qlc_account_type a {
+    display: inline-block;
+    margin: 0 30px 0 0; }
+    @media (max-width: 480px) {
+      #qlc_build_profile_a .qlc_account_type a {
+        display: block;
+        margin: inherit; } }
+    #qlc_build_profile_a .qlc_account_type a:last-child img {
+      padding: 27px 24px !important; }
+  #qlc_build_profile_a .qlc_verify {
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e4e2e2; }
+    @media (max-width: 991px) {
+      #qlc_build_profile_a .qlc_verify {
+        text-align: center; } }
+    #qlc_build_profile_a .qlc_verify img {
+      display: block; }
+      @media (max-width: 991px) {
+        #qlc_build_profile_a .qlc_verify img {
+          margin: 0 auto; } }
+  #qlc_build_profile_a .qlc_verify_form {
+    padding: 0; }
+    #qlc_build_profile_a .qlc_verify_form h3 {
+      font-size: 25px;
+      margin: 0 0 30px !important;
+      display: block;
+      font-family: "Circular Std  Bold";
+      color: #000000; }
+    #qlc_build_profile_a .qlc_verify_form a.picture {
+      width: 120px;
+      height: 120px;
+      border: 1px solid #e4e2e2;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 122px;
+      display: block; }
+      @media (max-width: 1023px) {
+        #qlc_build_profile_a .qlc_verify_form a.picture {
+          margin: 0 auto 15px; } }
+      #qlc_build_profile_a .qlc_verify_form a.picture img {
+        display: initial;
+        margin: initial; }
+
+#qlc_build_profile_b {
+  padding: 38px 55px 60px; }
+  @media (max-width: 767px) {
+    #qlc_build_profile_b {
+      padding: 30px 16px; } }
+  #qlc_build_profile_b .qlc_header {
+    margin-bottom: 92px; }
+  #qlc_build_profile_b h3 {
+    font-family: 'Circular Std  Bold';
+    line-height: 30px;
+    margin-bottom: 50px !important;
+    font-size: 25px !important;
+    margin-top: 0 !important; }
+
+.qlc_build_profile_tags {
+  overflow: hidden; }
+  .qlc_build_profile_tags a {
+    padding: 12px 35px;
+    margin-bottom: 20px; }
+    .qlc_build_profile_tags a:hover {
+      color: #9e25a5; }
+
+@media (max-width: 991px) {
+  img {
+    max-width: 100%; } }
+
+.qlc_register a {
+  display: block; }
+  @media (max-width: 767px) {
+    .qlc_register a img.img-responsive {
+      display: inline-block !important; } }
+
+.qlc_organization {
+  margin: 0 !important; }
+
+.qlc_difference {
+  margin: 0 !important;
+  padding: 0 !important; }
+  .qlc_difference h3 {
+    margin: 0 !important; }
+
+.wp_qlc_individual {
+  margin: 0 !important; }
+  .wp_qlc_individual h2 {
+    color: #297883 !important; }
+
+.wp_qlc_account_type a {
+  margin-bottom: 12px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.3; }
+  .wp_qlc_account_type a img {
+    border: 2px solid #e4e2e2;
+    border-radius: 2px;
+    padding: 24px;
+    margin-bottom: 12px; }
+  .wp_qlc_account_type a h6 {
+    font-size: 14px;
+    font-family: 'Circular Std  Bold';
+    text-transform: capitalize;
+    color: #000; }
+  .wp_qlc_account_type a:hover, .wp_qlc_account_type a.active {
+    opacity: initial; }
+    .wp_qlc_account_type a:hover img, .wp_qlc_account_type a.active img {
+      border: 2px solid #297883; }
+
+#qlc_build_profile_a {
+  padding: 38px 55px 55px; }
+  #qlc_build_profile_a .qlc_verify a {
+    text-decoration: none;
+    color: #7f868b;
+    font-size: 13px; }
+  #qlc_build_profile_a img {
+    margin-bottom: 12px; }
+  #qlc_build_profile_a hr {
+    width: 410px !important; }
+  #qlc_build_profile_a .qlc_header {
+    margin-bottom: 44px; }
+  #qlc_build_profile_a .wp_qlc_account_type a {
+    display: inline-block;
+    margin: 0 30px 0 0; }
+    @media (max-width: 480px) {
+      #qlc_build_profile_a .wp_qlc_account_type a {
+        display: block;
+        margin: inherit; } }
+    #qlc_build_profile_a .wp_qlc_account_type a:last-child img {
+      padding: 27px 24px !important; }
+
+.wp_qlc_difference {
+  margin: 0 !important;
+  padding: 0 !important; }
+  .wp_qlc_difference h3 {
+    margin: 0 !important;
+    background: url("../images/yellow.png") bottom repeat-x !important; }
+
+.startup_qlc_individual {
+  margin: 0 !important; }
+  .startup_qlc_individual h2 {
+    color: #ff413e !important; }
+
+.startup_qlc_account_type a {
+  margin-bottom: 12px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.3; }
+  .startup_qlc_account_type a img {
+    border: 2px solid #ff413e;
+    border-radius: 2px;
+    padding: 24px;
+    margin-bottom: 12px; }
+  .startup_qlc_account_type a h6 {
+    font-size: 14px;
+    font-family: 'Circular Std  Bold';
+    text-transform: capitalize;
+    color: #000; }
+  .startup_qlc_account_type a:hover, .startup_qlc_account_type a.active {
+    opacity: initial; }
+    .startup_qlc_account_type a:hover img, .startup_qlc_account_type a.active img {
+      border: 2px solid #ff413e; }
+
+#qlc_build_profile_a {
+  padding: 38px 55px 55px; }
+  #qlc_build_profile_a .qlc_verify a {
+    text-decoration: none;
+    color: #7f868b;
+    font-size: 13px; }
+  #qlc_build_profile_a img {
+    margin-bottom: 12px; }
+  #qlc_build_profile_a hr {
+    width: 410px !important; }
+  #qlc_build_profile_a .qlc_header {
+    margin-bottom: 44px; }
+
+.startup_qlc_account_type {
+  padding-top: 108px;
+  text-align: center; }
+  .startup_qlc_account_type a {
+    display: inline-block;
+    margin: 0 30px 0 0; }
+    @media (max-width: 480px) {
+      .startup_qlc_account_type a {
+        display: block;
+        margin: inherit; } }
+    .startup_qlc_account_type a:last-child img {
+      padding: 27px 24px !important; }
+
+.startup_qlc_difference {
+  margin: 0 !important;
+  padding: 0 !important; }
+  .startup_qlc_difference h3 {
+    margin: 0 !important;
+    background: url("../images/app-pending.png") bottom repeat-x !important; }
 
 /*# sourceMappingURL=style.css.map */

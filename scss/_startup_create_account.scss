@@ -1,0 +1,81 @@
+.startup_qlc_individual {
+  margin: 0 !important;
+  h2 {
+    color: $coral-red !important;
+  }
+}
+
+.startup_qlc_account_type {
+  a {
+    margin-bottom: 12px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    opacity: 0.3;
+    img {
+      border: 2px solid $coral-red;
+      border-radius: 2px;
+      padding: 24px;
+      margin-bottom: 12px;
+    }
+    h6 {
+      font-size: 14px;
+      font-family: 'Circular Std  Bold';
+      text-transform: capitalize;
+      color: #000;
+    }
+    &:hover, &.active {
+      opacity: initial;
+      img {
+        border: 2px solid $coral-red;
+      }
+    }
+  }
+}
+
+#qlc_build_profile_a {
+  padding: 38px 55px 55px;
+  .qlc_verify {
+    a {
+      text-decoration: none;
+      color: #7f868b;
+      font-size: 13px;
+    }
+  }
+  img {
+    margin-bottom: 12px;
+  }
+  hr {
+    width: 410px !important;
+  }
+  .qlc_header {
+    margin-bottom: 44px;
+  }
+}
+
+.startup_qlc_account_type {
+  padding-top: 108px;
+  text-align: center;
+  a {
+    display: inline-block;
+    margin: 0 30px 0 0;
+    @media (max-width: 480px) {
+      display: block;
+      margin: inherit;
+    }
+    &:last-child {
+      img {
+        padding: 27px 24px !important;
+      }
+    }
+  }
+}
+
+.startup_qlc_difference {
+  margin: 0 !important;
+  padding: 0 !important;
+  h3 {
+    margin: 0 !important;
+    background: url("../images/app-pending.png") bottom repeat-x !important;
+  }
+}
