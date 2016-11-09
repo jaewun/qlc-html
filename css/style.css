@@ -6632,6 +6632,11 @@ button.close {
   font-weight: bold !important;
   text-decoration: none !important; }
 
+.qlc_red_anchor {
+  color: #ff413e !important;
+  font-weight: bold !important;
+  text-decoration: none !important; }
+
 .qlc_purple_tag {
   color: #9e25a5 !important;
   text-decoration: none !important;
@@ -6728,6 +6733,9 @@ button.close {
 .qlc_save_preference {
   padding: 55px 40px 60px;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .qlc_save_preference {
+      padding: 55px 15px 60px; } }
   .qlc_save_preference .qlc_header a {
     font-size: 11px;
     font-family: 'Open Sans', sans-serif;
@@ -7069,6 +7077,9 @@ input[type=text], input[type=email], input[type=password] {
 
 #qlc_build_profile_a {
   padding: 38px 55px 55px; }
+  @media (max-width: 767px) {
+    #qlc_build_profile_a {
+      padding: 38px 15px 55px; } }
   #qlc_build_profile_a .qlc_verify a {
     text-decoration: none;
     color: #7f868b;
@@ -7080,18 +7091,22 @@ input[type=text], input[type=email], input[type=password] {
   #qlc_build_profile_a .qlc_header {
     margin-bottom: 44px; }
 
-.startup_qlc_account_type {
+.startup_qlc_account_type a {
+  display: inline-block;
+  margin: 0 30px 0 0; }
+  @media (max-width: 480px) {
+    .startup_qlc_account_type a {
+      display: block;
+      margin: inherit; } }
+  .startup_qlc_account_type a:last-child img {
+    padding: 27px 24px !important; }
+
+.qlc_padding {
   padding-top: 108px;
   text-align: center; }
-  .startup_qlc_account_type a {
-    display: inline-block;
-    margin: 0 30px 0 0; }
-    @media (max-width: 480px) {
-      .startup_qlc_account_type a {
-        display: block;
-        margin: inherit; } }
-    .startup_qlc_account_type a:last-child img {
-      padding: 27px 24px !important; }
+  @media (max-width: 767px) {
+    .qlc_padding {
+      padding: 50px 0 0; } }
 
 .startup_qlc_difference {
   margin: 0 !important;
@@ -7099,5 +7114,79 @@ input[type=text], input[type=email], input[type=password] {
   .startup_qlc_difference h3 {
     margin: 0 !important;
     background: url("../images/app-pending.png") bottom repeat-x !important; }
+
+.startup_qlc_preference {
+  clear: both; }
+  .startup_qlc_preference .qlc_tags h3 {
+    font-family: "Circular Std  Bold";
+    font-size: 23px;
+    color: #000000;
+    margin: 0 0 38px 0; }
+
+#startup_qlc_save_preference .qlc_header {
+  margin-bottom: 57px !important; }
+#startup_qlc_save_preference .qlc_social_images a {
+  display: inline-block;
+  margin: 0 7px 16px; }
+
+.qlc_black_box {
+  background: #fcfcfc;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 110px; }
+  .qlc_black_box .qlc_black_box_content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 4px -4px 16px #f3f3f3, -4px 4px 16px #f3f3f3; }
+    .qlc_black_box .qlc_black_box_content img {
+      display: block;
+      border-radius: 50%;
+      border: 1px solid #e4e2e2;
+      margin-right: 23px; }
+    .qlc_black_box .qlc_black_box_content h3 {
+      font-size: 25px;
+      color: #000000;
+      margin: 0 0 16px 0;
+      font-family: "Circular Std  Bold"; }
+    .qlc_black_box .qlc_black_box_content p {
+      color: #42414d;
+      font-size: 12px;
+      line-height: 25px; }
+
+#startup_profile_b {
+  padding: 38px 55px 60px; }
+  @media (max-width: 767px) {
+    #startup_profile_b {
+      padding: 38px 15px 60px; } }
+  #startup_profile_b .qlc_header {
+    margin-bottom: 42px; }
+  #startup_profile_b h3 {
+    font-family: "Circular Std  Bold";
+    margin: 0 0 30px 0;
+    font-size: 25px;
+    color: #000000; }
+  #startup_profile_b .qlc_bio {
+    border: 1px solid #e4e2e2;
+    padding: 23px 18px;
+    border-radius: 3px;
+    margin-bottom: 28px; }
+  #startup_profile_b .qlc_black_box {
+    padding: 40px 30px; }
+    #startup_profile_b .qlc_black_box .qlc_black_box_content {
+      padding: 40px 28px; }
+      #startup_profile_b .qlc_black_box .qlc_black_box_content img {
+        margin-right: 0;
+        margin-bottom: 15px; }
+      #startup_profile_b .qlc_black_box .qlc_black_box_content p {
+        margin-bottom: 0 !important; }
+  #startup_profile_b p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #94999d; }
+
+.qlc_black {
+  color: #000000 !important; }
 
 /*# sourceMappingURL=style.css.map */

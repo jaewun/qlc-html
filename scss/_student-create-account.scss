@@ -163,6 +163,12 @@
   text-decoration: none !important;
 }
 
+.qlc_red_anchor {
+  color: $coral-red !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+
 .qlc_purple_tag {
   color: $seance !important;
   text-decoration: none !important;
@@ -276,6 +282,9 @@
 
 .qlc_save_preference {
   padding: 55px 40px 60px;
+  @media (max-width: 767px) {
+    padding: 55px 15px 60px;
+  }
   overflow: hidden;
   .qlc_header {
     a {
