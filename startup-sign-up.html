@@ -7,7 +7,8 @@
     <link href="images/favicon.png" rel="shortcut icon">
     <title>QLC</title>
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!-- Bootstrap -->
 
     <link href="css/style.css" rel="stylesheet">
@@ -48,23 +49,33 @@
                     <a href="#">Save my preferences</a>
                 </div>
             </section>
-            <section class="qlc_account qlc_acc2">
-                <h1>I am</h1>
-                <div class="col-md-5 qlc_working">
-                    <img src="images/user.png" alt="">
-                    <br>
-                    <h3>Working</h3>
+            <section class="background" id="qlc_sign_up">
+                <div class="col-md-12 qlc_header text-left">
+                    <img src="images/rocket.png" alt="" class="pull-left">
+                    <h2>Register your organization profile</h2>
+                    <p>Your information help us to find you the right <a href="#">courses</a></p>
+                    <hr>
                 </div>
-                <div class="col-md-2 qlc_or">
-                    <span><label>or</label></span>
+                <div class="qlc_sign_up_form">
+                    <div class="col-md-5 qlc_verify">
+                        <div class="startup_qlc_account_type qlc_padding">
+                            <a href="#" class="active"><img src="images/startup-user1.png" alt=""><h6>working</h6></a>
+                            <a href="#"><img src="images//startup-student1.png" alt=""><h6>studying</h6></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12 qlc_create_my_account">
+                        <h3 class="pull-left">Register with email</h3>
+                        <a href="#" class="pull-right letter"><img src="images/letter.png" alt=""></a>
+                        <form>
+                            <input type="text" placeholder="name">
+                            <input type="email" placeholder="email">
+                            <input type="password" placeholder="password">
+                            <input type="text" placeholder="Where are you based?" class="qlc_half_width">
+                            <input type="text" placeholder="How did you hear about us?" class="qlc_half_width">
+                            <button type="submit" class="qlc_red_button pull-right">Create my account</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-md-5 qlc_student">
-                    <img src="images/student.png" alt="">
-                    <br>
-                    <h3>Studying</h3>
-                </div>
-                <h4>We recommend you</h4>
-                <p>to build your profile to get the best curated content!</p>
             </section>
         </div>
     </section>
