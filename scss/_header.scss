@@ -190,21 +190,21 @@
         padding-right: 29px;
         cursor: pointer;
         font-family: "Circular Std  Bold";
-        &:after {
-          content: "\e259";
-          display: inline-block;
-          font-family: 'Glyphicons Halflings';
-          font-style: normal;
-          font-weight: 400;
-          line-height: 1;
-          color: #000;
-          -webkit-font-smoothing: antialiased;
-          -moz-osx-font-smoothing: grayscale;
-          position: absolute;
-          right: 8px;
-          top: 3px;
-          font-size: 15px
-        }
+        //&:after {
+        //  content: "\e259";
+        //  display: inline-block;
+        //  font-family: 'Glyphicons Halflings';
+        //  font-style: normal;
+        //  font-weight: 400;
+        //  line-height: 1;
+        //  color: #000;
+        //  -webkit-font-smoothing: antialiased;
+        //  -moz-osx-font-smoothing: grayscale;
+        //  position: absolute;
+        //  right: 8px;
+        //  top: 3px;
+        //  font-size: 15px
+        //}
       }
     }
   }
