@@ -55,8 +55,10 @@
   #qlc_main_navigation {
     margin-top: 8px;
     float: left;
+    height: 52px;
     @media (max-width: 767px) {
       width: 100%;
+      height: auto;
       float: none;
     }
     ul {
@@ -96,30 +98,30 @@
             padding: 0 6px 31px;
           }
           &:hover {
-            color: #9e25a5;
+            color: $seance;
             font-weight: 700;
             text-decoration: none;
             font-size: 13px;
             padding: 0 6px 30px;
-            border-bottom: 5px solid #9e25a5;
+            border-bottom: 5px solid $seance;
             @media (max-width: 1200px) {
               font-size: 11px;
               padding: 0 6px 31px;
             }
             @media (max-width: 767px) {
               line-height: 22px;
-              border-bottom: 3px solid #9e25a5;
+              border-bottom: 3px solid $seance;
             }
           }
         }
         &.qlc_current_menu {
           a {
-            color: #9e25a5;
+            padding: 0 6px 30px;
+            color: $seance;
             font-weight: 700;
             text-decoration: none;
             font-size: 13px;
-            padding: 0 6px 30px;
-            border-bottom: 5px solid #9e25a5;
+            border-bottom: 5px solid $seance;
             @media (max-width: 767px) {
               border: none;
               line-height: 22px;
@@ -132,7 +134,7 @@
             }
             &:hover {
               @media (max-width: 767px) {
-                border-bottom: 3px solid #9e25a5;
+                border-bottom: 3px solid $seance;
               }
             }
           }
@@ -182,7 +184,7 @@
       }
       .qlc_user_profile_name {
         display: inline-block;
-        color: #9e25a5;
+        color: $seance;
         font-size: 15px;
         text-decoration: none;
         font-weight: 700;

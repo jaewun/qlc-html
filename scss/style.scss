@@ -1,3 +1,5 @@
+@import "custom-variables";
+
 // main bootstarp files
 @import "bootstrap";
 @import "bootstrap-compass";
@@ -6,7 +8,6 @@
 
 // main custom files
 @import "fonts";
-@import "custom-variables";
 @import "header";
 @import "footer";
 @import "dashboard-content";
@@ -14,3 +15,9 @@
 @import "student-create-account";
 @import "wp-create-content";
 @import "startup_create_account";
+
+//third party plugins
+@import "bootstrap-social";
+@import "font-awesome/font-awesome";
+@import "select2/core";
+@import "select2-bootstrap/style";
